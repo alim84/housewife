@@ -3,6 +3,7 @@ import { GrAnnounce } from "react-icons/gr";
 import { GiCook } from "react-icons/gi";
 import { CiMenuFries } from "react-icons/ci";
 import { IoMdArrowDropdown } from "react-icons/io";
+import { FaCartPlus } from "react-icons/fa6";
 import DailyFood from "./DailyFood";
 import Cake from "./Cake";
 import Foods from "./Foods";
@@ -10,8 +11,7 @@ import { useState } from "react";
 import Footer from "./Footer";
 
 const Topmenu = () => {
-
-let [menu, submenu]=useState(false)
+  let [menu, submenu] = useState(false);
 
   return (
     <>
@@ -42,14 +42,16 @@ let [menu, submenu]=useState(false)
 
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-40 px-4 py-3 bg-white rounded-md">
-            
-            
-           
-            
-             <button className="flex gap-4  items-center" onClick={()=>submenu(!menu)}>  <CiMenuFries />সকল খাবার <IoMdArrowDropdown className="mx-[48px] end-0"  /> </button> 
-        
+            <button
+              className="flex gap-4  items-center"
+              onClick={() => submenu(!menu)}
+            >
+              {" "}
+              <CiMenuFries />
+              সকল খাবার <IoMdArrowDropdown className="mx-[48px] end-0" />{" "}
+            </button>
           </div>
-          <div className="flex gap-5">
+          <div className="flex gap-5 items-center">
             <button className="flex gap-2 items-center py-3 px-10 bg-white rounded-tl-lg rounded-br-lg hover:text-red-400">
               <GrAnnounce className="hover:text-red-400" /> অফার
             </button>
@@ -63,49 +65,43 @@ let [menu, submenu]=useState(false)
               <GiCook className="hover:text-red-400" />
               গৃহিনী
             </button>
+            <FaCartPlus className="text-white text-2xl font-bold" />
           </div>
         </div>
       </div>
-{menu &&(
-
-<div className=" w-[300px] h-[600px] bg-red-300 absolute translate-x-[500px]">
-
-  <li className="px-6 py-6 hover:bg-transparent  shadow-lg hover:shadow-gray-100 text-md font-semibold hover:text-white">
-    HONEY
-  </li>
-  <li className="px-6 py-6 hover:bg-red-400 shadow-lg hover:shadow-gray-100 text-md font-semibold hover:text-white">
-    NUTS & DATES
-  </li>
-  <li className="px-6 py-6 hover:bg-red-400  shadow-lg hover:shadow-gray-100 text-md font-semibold hover:text-white">
-    SPICES
-  </li>
-  <li className="px-6 py-6 hover:bg-red-400  shadow-lg hover:shadow-gray-100 text-md font-semibold hover:text-white">
-    OIL
-  </li>
-  <li className="px-6 py-6 hover:bg-red-400  shadow-lg hover:shadow-gray-100 text-md font-semibold hover:text-white">
-    RICE, PULSE & GRAINS
-  </li>
-  <li className="px-6 py-6 hover:bg-red-400  shadow-lg hover:shadow-gray-100 text-md font-semibold hover:text-white">
-    SUPER FOODS
-  </li>
-  <li className="px-6 py-6 hover:bg-red-400  shadow-lg hover:shadow-gray-100 text-md font-semibold hover:text-white">
-    TEA & SNACKS
-  </li>
-  <li className="px-6 py-6 hover:bg-red-400 shadow-lg hover:shadow-gray-100 text-md font-semibold hover:text-white">
-    FRUITS
-  </li>
-
-</div>
-
-
-)}
-  
-     
+      {menu && (
+        <div className=" w-[300px] h-[600px] bg-red-300 absolute translate-x-[500px]">
+          <li className="px-6 py-6 hover:bg-red-400   shadow-lg hover:shadow-gray-100 text-md font-semibold hover:text-white">
+            HONEY
+          </li>
+          <li className="px-6 py-6 hover:bg-red-400 shadow-lg hover:shadow-gray-100 text-md font-semibold hover:text-white">
+            NUTS & DATES
+          </li>
+          <li className="px-6 py-6 hover:bg-red-400  shadow-lg hover:shadow-gray-100 text-md font-semibold hover:text-white">
+            SPICES
+          </li>
+          <li className="px-6 py-6 hover:bg-red-400  shadow-lg hover:shadow-gray-100 text-md font-semibold hover:text-white">
+            OIL
+          </li>
+          <li className="px-6 py-6 hover:bg-red-400  shadow-lg hover:shadow-gray-100 text-md font-semibold hover:text-white">
+            RICE, PULSE & GRAINS
+          </li>
+          <li className="px-6 py-6 hover:bg-red-400  shadow-lg hover:shadow-gray-100 text-md font-semibold hover:text-white">
+            SUPER FOODS
+          </li>
+          <li className="px-6 py-6 hover:bg-red-400  shadow-lg hover:shadow-gray-100 text-md font-semibold hover:text-white">
+            TEA & SNACKS
+          </li>
+          <li className="px-6 py-6 hover:bg-red-400 shadow-lg hover:shadow-gray-100 text-md font-semibold hover:text-white">
+            FRUITS
+          </li>
+        </div>
+      )}
 
       <DailyFood />
       <Cake />
       <Foods />
-      <Footer/>
+      <Footer />
     </>
   );
 };
