@@ -68,33 +68,33 @@ let [menu, submenu]=useState(false)
       </div>
 {menu &&(
 
-<div className=" w-[300px] h-[600px] bg-red-200 absolute translate-x-[500px]">
-<ul className="">
-  <li className="px-6 py-6 hover:bg-red-400 border-b-2 shadow-lg hover:shadow-gray-100 text-md font-semibold hover:text-white">
+<div className=" w-[300px] h-[600px] bg-red-300 absolute translate-x-[500px]">
+
+  <li className="px-6 py-6 hover:bg-transparent  shadow-lg hover:shadow-gray-100 text-md font-semibold hover:text-white">
     HONEY
   </li>
-  <li className="px-6 py-6 hover:bg-red-400 border-b-2 shadow-lg hover:shadow-gray-100 text-md font-semibold hover:text-white">
+  <li className="px-6 py-6 hover:bg-red-400 shadow-lg hover:shadow-gray-100 text-md font-semibold hover:text-white">
     NUTS & DATES
   </li>
-  <li className="px-6 py-6 hover:bg-red-400 border-b-2 shadow-lg hover:shadow-gray-100 text-md font-semibold hover:text-white">
+  <li className="px-6 py-6 hover:bg-red-400  shadow-lg hover:shadow-gray-100 text-md font-semibold hover:text-white">
     SPICES
   </li>
-  <li className="px-6 py-6 hover:bg-red-400 border-b-2 shadow-lg hover:shadow-gray-100 text-md font-semibold hover:text-white">
+  <li className="px-6 py-6 hover:bg-red-400  shadow-lg hover:shadow-gray-100 text-md font-semibold hover:text-white">
     OIL
   </li>
-  <li className="px-6 py-6 hover:bg-red-400 border-b-2 shadow-lg hover:shadow-gray-100 text-md font-semibold hover:text-white">
+  <li className="px-6 py-6 hover:bg-red-400  shadow-lg hover:shadow-gray-100 text-md font-semibold hover:text-white">
     RICE, PULSE & GRAINS
   </li>
-  <li className="px-6 py-6 hover:bg-red-400 border-b-2 shadow-lg hover:shadow-gray-100 text-md font-semibold hover:text-white">
+  <li className="px-6 py-6 hover:bg-red-400  shadow-lg hover:shadow-gray-100 text-md font-semibold hover:text-white">
     SUPER FOODS
   </li>
-  <li className="px-6 py-6 hover:bg-red-400 border-b-2 shadow-lg hover:shadow-gray-100 text-md font-semibold hover:text-white">
+  <li className="px-6 py-6 hover:bg-red-400  shadow-lg hover:shadow-gray-100 text-md font-semibold hover:text-white">
     TEA & SNACKS
   </li>
-  <li className="px-6 py-6 hover:bg-red-400 border-b-2 shadow-lg hover:shadow-gray-100 text-md font-semibold hover:text-white">
+  <li className="px-6 py-6 hover:bg-red-400 shadow-lg hover:shadow-gray-100 text-md font-semibold hover:text-white">
     FRUITS
   </li>
-</ul>
+
 </div>
 
 
