@@ -28,7 +28,7 @@ const DailyFood = () => {
                 Offer 20%
               </div>
             </div>
-            <button className="flex mx-auto py-3 px-7 font-bold text-white bg-red-400 hover:text-red-500 hover:bg-red-300 hover:font-bold  transition transform hover:-translate-y-1  ">
+            <button className="flex mx-auto py-3 px-7 text-white font-bold bg-red-400 hover:text-red-500 hover:bg-red-300 hover:font-bold   ">
               ADD TO CART
             </button>
           </div>
@@ -53,7 +53,7 @@ const DailyFood = () => {
                 Offer 20%
               </div>
             </div>
-            <button className="flex mx-auto py-3 px-7 bg-red-400 ">
+            <button className="flex mx-auto py-3 px-7 text-white font-bold bg-red-400 hover:text-red-500 hover:bg-red-300 hover:font-bold  ">
               ADD TO CART
             </button>
           </div>
@@ -78,7 +78,7 @@ const DailyFood = () => {
                 Offer 20%
               </div>
             </div>
-            <button className="flex mx-auto py-3 px-7 bg-red-400 ">
+            <button className="flex mx-auto py-3 px-7 text-white font-bold bg-red-400 hover:text-red-500 hover:bg-red-300 hover:font-bold  ">
               ADD TO CART
             </button>
           </div>
@@ -103,7 +103,7 @@ const DailyFood = () => {
                 Offer 20%
               </div>
             </div>
-            <button className="flex mx-auto py-3 px-7 bg-red-400 ">
+            <button className="flex mx-auto py-3 px-7 text-white font-bold bg-red-400 hover:text-red-500 hover:bg-red-300 hover:font-bold  ">
               ADD TO CART
             </button>
           </div>
@@ -128,7 +128,7 @@ const DailyFood = () => {
                 Offer 20%
               </div>
             </div>
-            <button className="flex mx-auto py-3 px-7 bg-red-400 ">
+            <button className="flex mx-auto py-3 px-7 text-white font-bold bg-red-400 hover:text-red-500 hover:bg-red-300 hover:font-bold ">
               ADD TO CART
             </button>
           </div>
@@ -153,7 +153,7 @@ const DailyFood = () => {
                 Offer 20%
               </div>
             </div>
-            <button className="flex mx-auto py-3 px-7 bg-red-400 ">
+            <button className="flex mx-auto py-3 px-7 text-white font-bold bg-red-400 hover:text-red-500 hover:bg-red-300 hover:font-bold">
               ADD TO CART
             </button>
           </div>
