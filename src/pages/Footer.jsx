@@ -12,7 +12,7 @@ const Footer = () => {
       <div className="bg-green-900">
         <div className="container mx-auto py-10 px-20">
           <hr></hr>
-          <h2 className="text-3xl font-bold  text-center text-white py-4 ">
+          <h2 className="text-3xl  font-bold  text-center text-white py-4 ">
             গৃহিনী
           </h2>
           <div className=" flex justify-center gap-6 text-2xl text-white py-4">

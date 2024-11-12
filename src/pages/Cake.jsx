@@ -1,7 +1,8 @@
 const Cake = () => {
   return (
     <>
-      <div className="container mx-auto mt-4 ">
+     <div className=" py-4">
+     <div className="container mx-auto  ">
         <div className="bg-red-300 py-5">
           <h1 className="px-4 text-2xl text-gray-700">Cake Items</h1>
         </div>
@@ -159,6 +160,7 @@ const Cake = () => {
           </div>
         </div>
       </div>
+     </div>
     </>
   );
 };

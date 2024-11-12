@@ -43,7 +43,7 @@ const Topmenu = () => {
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-40 px-4 py-3 bg-white rounded-md">
             <button
-              className="flex gap-4  items-center"
+              className="flex font-semibold gap-4  items-center"
               onClick={() => submenu(!menu)}
             >
               {" "}
@@ -52,7 +52,7 @@ const Topmenu = () => {
             </button>
           </div>
           <div className="flex gap-5 items-center">
-            <button className="flex gap-2 items-center py-3 px-10 bg-white rounded-tl-lg rounded-br-lg hover:text-red-400">
+            <button className="flex gap-2 items-center font-semibold py-3 px-10 bg-white rounded-tl-lg rounded-br-lg hover:text-red-400">
               <GrAnnounce className="hover:text-red-400" /> অফার
             </button>
             <input
@@ -60,41 +60,36 @@ const Topmenu = () => {
               type="text"
               placeholder="Search Your Choice"
             />
-            <button className=" flex items-center gap-2 py-3 px-12 bg-white rounded-md hover:text-red-400">
+            <button className=" flex items-center gap-2 py-3 px-12 font-semibold bg-white rounded-md hover:text-red-400">
               {" "}
               <GiCook className="hover:text-red-400" />
               গৃহিনী
             </button>
-            <FaCartPlus className="text-white text-2xl font-bold" />
+            <button className="py-2 px-4 bg-red-400">
+              <FaCartPlus className="text-white text-2xl font-bold" />
+            </button>
           </div>
         </div>
       </div>
       {menu && (
-        <div className=" w-[300px] h-[600px] bg-red-300 absolute translate-x-[500px]">
-          <li className="px-6 py-6 hover:bg-red-400   shadow-lg hover:shadow-gray-100 text-md font-semibold hover:text-white">
-            HONEY
-          </li>
-          <li className="px-6 py-6 hover:bg-red-400 shadow-lg hover:shadow-gray-100 text-md font-semibold hover:text-white">
-            NUTS & DATES
-          </li>
-          <li className="px-6 py-6 hover:bg-red-400  shadow-lg hover:shadow-gray-100 text-md font-semibold hover:text-white">
-            SPICES
-          </li>
-          <li className="px-6 py-6 hover:bg-red-400  shadow-lg hover:shadow-gray-100 text-md font-semibold hover:text-white">
-            OIL
-          </li>
-          <li className="px-6 py-6 hover:bg-red-400  shadow-lg hover:shadow-gray-100 text-md font-semibold hover:text-white">
-            RICE, PULSE & GRAINS
-          </li>
-          <li className="px-6 py-6 hover:bg-red-400  shadow-lg hover:shadow-gray-100 text-md font-semibold hover:text-white">
-            SUPER FOODS
-          </li>
-          <li className="px-6 py-6 hover:bg-red-400  shadow-lg hover:shadow-gray-100 text-md font-semibold hover:text-white">
-            TEA & SNACKS
-          </li>
-          <li className="px-6 py-6 hover:bg-red-400 shadow-lg hover:shadow-gray-100 text-md font-semibold hover:text-white">
-            FRUITS
-          </li>
+        <div className=" w-[300px]  bg-red-300 absolute translate-x-[300px]">
+          <ul>
+            <li className="px-6 py-6 hover:bg-red-400   shadow-lg hover:shadow-gray-100 text-md font-semibold hover:text-white">
+              GEE
+            </li>
+            <li className="px-6 py-6 hover:bg-red-400 shadow-lg hover:shadow-gray-100 text-md font-semibold hover:text-white">
+              MUSSTARD OIL
+            </li>
+            <li className="px-6 py-6 hover:bg-red-400  shadow-lg hover:shadow-gray-100 text-md font-semibold hover:text-white">
+              FIELD
+            </li>
+            <li className="px-6 py-6 hover:bg-red-400  shadow-lg hover:shadow-gray-100 text-md font-semibold hover:text-white">
+              OIL
+            </li>
+            <li className="px-6 py-6 hover:bg-red-400  shadow-lg hover:shadow-gray-100 text-md font-semibold hover:text-white">
+              RICE & PULSE
+            </li>
+          </ul>
         </div>
       )}
 
