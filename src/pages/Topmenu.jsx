@@ -9,6 +9,7 @@ import Cake from "./Cake";
 import Foods from "./Foods";
 import { useState } from "react";
 import Footer from "./Footer";
+import { FaAngleRight } from "react-icons/fa";
 
 const Topmenu = () => {
   let [menu, submenu] = useState(false);
@@ -73,22 +74,36 @@ const Topmenu = () => {
       </div>
       {menu && (
         <div className=" w-[300px]  bg-red-300 absolute translate-x-[300px]">
-          <ul>
-            <li className="px-6 py-6 hover:bg-red-400   shadow-lg hover:shadow-gray-100 text-md font-semibold hover:text-white">
-              GEE
+          <div className="flex justify-between items-center border-b-2">
+            <button className="px-6 py-6 hover:bg-red-400   text-md font-semibold hover:text-white">
+              GEE 
+            </button>
+            <FaAngleRight />
+            </div>
+            <ul className="flex justify-between items-center border-b-2">
+            <li className="px-6 py-6 hover:bg-red-400  text-md font-semibold hover:text-white">
+              MUSSTARD OIL 
             </li>
-            <li className="px-6 py-6 hover:bg-red-400 shadow-lg hover:shadow-gray-100 text-md font-semibold hover:text-white">
-              MUSSTARD OIL
+            <FaAngleRight />
+            </ul>
+           <ul className="flex justify-between items-center border-b-2">
+
+            <li className="px-6 py-6 hover:bg-red-400   text-md font-semibold hover:text-white">
+              FIELD 
             </li>
-            <li className="px-6 py-6 hover:bg-red-400  shadow-lg hover:shadow-gray-100 text-md font-semibold hover:text-white">
-              FIELD
+            <FaAngleRight />
+           </ul>
+           <ul className="flex justify-between items-center  border-b-2">
+           <li className="px-6 py-6 hover:bg-red-400  text-md font-semibold hover:text-white">
+              OIL 
             </li>
-            <li className="px-6 py-6 hover:bg-red-400  shadow-lg hover:shadow-gray-100 text-md font-semibold hover:text-white">
-              OIL
+            <FaAngleRight />
+           </ul>
+            <ul className="flex justify-between items-center border-b-2">
+            <li className="px-6 py-6 hover:bg-red-400   text-md font-semibold hover:text-white">
+              RICE & PULSE 
             </li>
-            <li className="px-6 py-6 hover:bg-red-400  shadow-lg hover:shadow-gray-100 text-md font-semibold hover:text-white">
-              RICE & PULSE
-            </li>
+            <FaAngleRight />
           </ul>
         </div>
       )}
