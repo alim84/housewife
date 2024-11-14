@@ -8,8 +8,8 @@ const DailyFood = () => {
       </div>
 
       <div className="container mx-auto flex gap-4 mt-4 ">
-        <div className="w-[250px] h-[350px] bg-red-100 shadow-md shadow-red-300 ">
-          <div className="p-5">
+        <div className="w-[250px] h-[350px] bg-red-100 shadow-md shadow-red-300 hover:border-2 hover:border-green-500 ">
+          <div className="p-5 ">
             <img
               className="w-[200px] h-[150px] rounded-md mb-5"
               src="images.jpg"
@@ -33,11 +33,11 @@ const DailyFood = () => {
             </button>
           </div>
         </div>
-        <div className="w-[250px] h-[350px] bg-red-100 shadow-md shadow-red-300 ">
+        <div className="w-[250px] h-[350px] bg-red-100 shadow-md shadow-red-300 hover:border-2 hover:border-green-500 ">
           <div className="p-5">
             <img
               className="w-[200px] h-[150px] rounded-md mb-5"
-              src="images.jpg"
+              src="cook-1.webp"
               alt=""
             />
             <h2 className="text-lg text-center font-bold text-red-800 mb-4">
@@ -58,11 +58,11 @@ const DailyFood = () => {
             </button>
           </div>
         </div>
-        <div className="w-[250px] h-[350px] bg-red-100 shadow-md shadow-red-300 ">
+        <div className="w-[250px] h-[350px] bg-red-100 shadow-md shadow-red-300 hover:border-2 hover:border-green-500 ">
           <div className="p-5">
             <img
               className="w-[200px] h-[150px] rounded-md mb-5"
-              src="images.jpg"
+              src="cook-2.jpg"
               alt=""
             />
             <h2 className="text-lg text-center font-bold text-red-800 mb-4">
@@ -83,11 +83,11 @@ const DailyFood = () => {
             </button>
           </div>
         </div>
-        <div className="w-[250px] h-[350px] bg-red-100 shadow-md shadow-red-300 ">
+        <div className="w-[250px] h-[350px] bg-red-100 shadow-md shadow-red-300 hover:border-2 hover:border-green-500 ">
           <div className="p-5">
             <img
               className="w-[200px] h-[150px] rounded-md mb-5"
-              src="images.jpg"
+              src="cook-3.jpg"
               alt=""
             />
             <h2 className="text-lg text-center font-bold text-red-800 mb-4">
@@ -108,11 +108,11 @@ const DailyFood = () => {
             </button>
           </div>
         </div>
-        <div className="w-[250px] h-[350px] bg-red-100 shadow-md shadow-red-300 ">
+        <div className="w-[250px] h-[350px] bg-red-100 shadow-md shadow-red-300 hover:border-2 hover:border-green-500 ">
           <div className="p-5">
             <img
               className="w-[200px] h-[150px] rounded-md mb-5"
-              src="images.jpg"
+              src="cook-5.webp"
               alt=""
             />
             <h2 className="text-lg text-center font-bold text-red-800 mb-4">
@@ -133,11 +133,11 @@ const DailyFood = () => {
             </button>
           </div>
         </div>
-        <div className="w-[250px] h-[350px] bg-red-100 shadow-md shadow-red-300 ">
+        <div className="w-[250px] h-[350px] bg-red-100 shadow-md shadow-red-300 hover:border-2 hover:border-green-500 ">
           <div className="p-5">
             <img
               className="w-[200px] h-[150px] rounded-md mb-5"
-              src="images.jpg"
+              src="cook-6.jpg"
               alt=""
             />
             <h2 className="text-lg text-center font-bold text-red-800 mb-4">

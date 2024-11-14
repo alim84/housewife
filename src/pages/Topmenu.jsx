@@ -74,33 +74,33 @@ const Topmenu = () => {
       </div>
       {menu && (
         <div className=" w-[300px]  bg-red-300 absolute translate-x-[300px]">
-          <div className="flex justify-between items-center border-b-2">
-            <button className="px-6 py-6 hover:bg-red-400   text-md font-semibold hover:text-white">
+          <div className="flex justify-between items-center border-b-2 hover:bg-red-400">
+            <button className="px-6 py-6  text-md font-semibold hover:text-white">
               GEE 
             </button>
             <FaAngleRight />
             </div>
-            <ul className="flex justify-between items-center border-b-2">
-            <li className="px-6 py-6 hover:bg-red-400  text-md font-semibold hover:text-white">
+            <ul className="flex justify-between items-center border-b-2 hover:bg-red-400">
+            <li className="px-6 py-6  text-md font-semibold hover:text-white">
               MUSSTARD OIL 
             </li>
             <FaAngleRight />
             </ul>
-           <ul className="flex justify-between items-center border-b-2">
+           <ul className="flex justify-between items-center border-b-2 hover:bg-red-400">
 
-            <li className="px-6 py-6 hover:bg-red-400   text-md font-semibold hover:text-white">
+            <li className="px-6 py-6   text-md font-semibold hover:text-white">
               FIELD 
             </li>
             <FaAngleRight />
            </ul>
-           <ul className="flex justify-between items-center  border-b-2">
-           <li className="px-6 py-6 hover:bg-red-400  text-md font-semibold hover:text-white">
+           <ul className="flex justify-between items-center hover:bg-red-400 border-b-2">
+           <li className="px-6 py-6  text-md font-semibold hover:text-white">
               OIL 
             </li>
             <FaAngleRight />
            </ul>
-            <ul className="flex justify-between items-center border-b-2">
-            <li className="px-6 py-6 hover:bg-red-400   text-md font-semibold hover:text-white">
+            <ul className="flex justify-between items-center border-b-2 hover:bg-red-400">
+            <li className="px-6 py-6    text-md font-semibold hover:text-white">
               RICE & PULSE 
             </li>
             <FaAngleRight />
