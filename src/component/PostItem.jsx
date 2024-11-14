@@ -4,22 +4,25 @@ const PostItem = () => {
       <div className="container mx-auto bg-red-400">
         <h2 className="text-2xl text-white font-bold text-center py-12">
           POST YOUR ITEMS
+          <hr/>
         </h2>
-        <div className="text-white text-lg  text-center">
-          <level className="mr-6 font-bold">Poducts Name:</level>
-          <input className="py-2 px-20 rounded-md" type="text"></input>
-        </div>
-        <div>
-          <level>Poducts Price</level>
-          <input type="text"></input>
-        </div>
-        <div>
-          <level>Offer Price</level>
-          <input type="text"></input>
-        </div>
-        <div>
-          <level>Poducts Name</level>
-          <input type="text"></input>
+        <div className="text-justify">
+          <div className="text-white text-lg  text-center">
+            <level className="mr-6 font-bold">Poducts Name :</level>
+            <input className="my-4 py-2 px-20 rounded-md" type="text"></input>
+          </div>
+          <div className="text-white text-lg  text-center">
+            <level className="mr-6 font-bold">Poducts Price :</level>
+            <input className="my-4 py-2 px-20 rounded-md" type="text"></input>
+          </div>
+          <div className="text-white text-lg  text-center">
+            <level className="mr-6 font-bold">Offer Price :</level>
+            <input className="my-4 py-2 px-20 rounded-md" type="text"></input>
+          </div>
+          <div className="text-white text-lg  text-center">
+            <level className="mr-6 font-bold">Poducts Name :</level>
+            <input className="my-4 py-2 px-20 rounded-md" type="text"></input>
+          </div>
         </div>
 
         <div className=" relative mx-auto justify-center gap-20 mt-10 p-5 outline-gray-400 outline outline-3 w-[800px]">
@@ -91,8 +94,11 @@ const PostItem = () => {
             ></input>
           </div>
         </div>
-        <level>আপলোড আইটেম</level>
-        <input type="file"></input>
+        <div className="text-center text-white font-bold">
+        <level className="px-4">আপলোড আইটেমর ছবি</level>
+        <input className="py-6 text-center  mb-[50px]" type="file"></input>
+        </div>
+        <button className="flex mx-auto py-3 px-32 bg-white rounded-md text-red-500 font-bold  " type="submit">Submit</button>
       </div>
     </>
   );
