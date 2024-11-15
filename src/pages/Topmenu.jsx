@@ -75,11 +75,12 @@ const Topmenu = () => {
       {menu && (
         <div className=" w-[300px]  bg-red-300 absolute translate-x-[300px]">
           <div className="flex justify-between items-center border-b-2 hover:bg-red-400">
-            <button className="px-6 py-6  text-md font-semibold hover:text-white">
+            <button className="px-28 py-6 relative text-md font-semibold hover:text-white">
               GEE 
             </button>
             <FaAngleRight />
             </div>
+            <div className="absolute translate-y-[-74px]  px-10 py-[36px] rounded-r-full bg-red-500 shadow-lg shadow-red-800"></div>
             <ul className="flex justify-between items-center border-b-2 hover:bg-red-400">
             <li className="px-6 py-6  text-md font-semibold hover:text-white">
               MUSSTARD OIL 
