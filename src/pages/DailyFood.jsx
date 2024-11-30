@@ -1,4 +1,9 @@
+import { useState } from "react";
+import { CiSearch } from "react-icons/ci";
+
 const DailyFood = () => {
+  let [Viewitem, setViewitem] = useState(false);
+
   return (
     <>
       <div className="container mx-auto mt-4 ">
@@ -15,6 +20,10 @@ const DailyFood = () => {
               src="images.jpg"
               alt=""
             />
+            <button onClick={() => setViewitem(!Viewitem)}>
+              {" "}
+              <CiSearch className="absolute translate-x-[200px] translate-y-[-180px]" />
+            </button>
             <h2 className="text-lg text-center font-bold text-red-800 mb-4">
               Product Name
             </h2>
@@ -159,6 +168,34 @@ const DailyFood = () => {
           </div>
         </div>
       </div>
+
+      {Viewitem && (
+        <div className="absolute translate-x-[50%] translate-y-[-50%] bg-red-200 w-[800px] h-[500px] p-6 grid grid-cols-2 items-center">
+          <div>
+            <img
+              className="w-[300px] h-[250px] rounded-md"
+              src="images.jpg"
+              alt=""
+            />
+          </div>
+          <div className="">
+            <h2 className="font-bold text-3xl mb-10">Product Name</h2>
+            <p className="font-bold bg-sky-500 inline-block rounded-full">
+              Price
+            </p>
+            <p>
+              asjdf;dsajf;lkjdsaf;lkjdsafljfa asdfdsakjfldasjflkjdsaflkjdsafa
+              asfdljaflakdsjfjdsajfasd ladskjfldajfadsjf
+            </p>
+            <div className="flex mt-10 items-center">
+              <div className="font-bold ">count</div>
+              <button className="flex mx-auto py-3 px-7 text-white font-bold bg-red-400 hover:text-red-500 hover:bg-red-300 hover:font-bold ">
+                ADD TO CART
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </>
   );
 };
