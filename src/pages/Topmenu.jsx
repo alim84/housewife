@@ -73,7 +73,7 @@ const Topmenu = () => {
         </div>
       </div>
       {menu && (
-        <div className=" w-[300px]  bg-red-300 absolute translate-x-[300px]">
+        <div className=" w-[300px]  bg-red-300 absolute translate-x-[300px] z-10">
           <div className="flex justify-between items-center border-b-2 hover:bg-red-400">
             <button className="px-28 py-6 relative text-md font-semibold hover:text-white">
               GEE 

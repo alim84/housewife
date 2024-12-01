@@ -7,26 +7,29 @@ const PostItem = () => {
           <hr />
         </h2>
         <div className="text-justify justify-between">
-          <div className="text-white text-lg  text-center">
-            <level className="mr-6 font-bold">Poducts Name :</level>
+          <div className=" text-lg  text-center">
+            <level className="mr-6 font-bold text-white">Poducts Name :</level>
             <input className="my-4 py-2 px-20 rounded-md" type="text"></input>
           </div>
-          <div className="text-white text-lg  text-center ">
-            <level className="mr-6 font-bold">Poducts Price :</level>
+          <div className="e text-lg  text-center ">
+            <level className="mr-6 font-bold text-white">Poducts Price :</level>
             <input className="my-4 py-2 px-20 rounded-md" type="text"></input>
           </div>
-          <div className="text-white text-lg  text-center">
-            <level className="mr-6 font-bold">Offer Price :</level>
+          <div className=" text-lg  text-center">
+            <level className="mr-6 font-bold text-white">Offer Price :</level>
             <input className="my-4 py-2 px-20 rounded-md" type="text"></input>
           </div>
-          <div className="text-white text-lg  text-center">
-            <level className="mr-6 font-bold">Poducts Name :</level>
-            <input className="my-4 py-2 px-20 rounded-md" type="text"></input>
+          <div className=" flex justify-center items-center text-lg  text-center">
+            <level className=" font-bold text-white mr-4">Poducts Name :</level>
+            <textarea
+              className=" py-10 px-20  rounded-md"
+              type="text"
+            ></textarea>
           </div>
         </div>
 
-        <div className=" relative mx-auto justify-center gap-20 mt-10 p-5 outline-gray-400 outline outline-3 w-[800px]">
-          <div className="flex grid-cols-3 justify-between">
+        <div className=" relative mx-auto gap-20 mt-10 p-5 outline-gray-400 outline outline-3 w-[800px]">
+          <div className="flex grid-cols-3 ">
             <div className="py-3">
               <level className="text-white font-semibold">বিভাগ :</level>
               <select
@@ -56,7 +59,7 @@ const PostItem = () => {
 
           <div className="py-3 ">
             <h3 className=" absolute translate-y-[-10px] text-yellow-200 bg-cyan-900 rounded-lg ml-2 px-3 top-0 left-0">
-              স্থায়ী ঠিকানা:{" "}
+              ঠিকানা:{" "}
             </h3>
             <level className="text-white font-semibold">পোস্ট অফিস :</level>
             <input
