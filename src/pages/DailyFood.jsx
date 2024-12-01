@@ -16,7 +16,7 @@ const DailyFood = () => {
         <div className="w-[250px] h-[350px] bg-red-100 shadow-md shadow-red-300 hover:border-2 hover:border-green-500 ">
           <div className="p-5 ">
             <img
-              className="w-[200px] h-[150px] rounded-md mb-5"
+              className="w-[200px] h-[150px] rounded-md "
               src="images.jpg"
               alt=""
             />
@@ -171,6 +171,13 @@ const DailyFood = () => {
 
       {Viewitem && (
         <div className="absolute translate-x-[50%] translate-y-[-50%] bg-red-200 w-[800px] h-[500px] p-6 grid grid-cols-2 items-center">
+          <button
+            onClick={() => setViewitem(!Viewitem)}
+            className="absolute translate-x-[760px] translate-y-[-220px] bg-red-500 px-3 rounded-full"
+          >
+            X
+          </button>
+
           <div>
             <img
               className="w-[300px] h-[250px] rounded-md"
@@ -180,7 +187,7 @@ const DailyFood = () => {
           </div>
           <div className="">
             <h2 className="font-bold text-3xl mb-10">Product Name</h2>
-            <p className="font-bold bg-sky-500 inline-block rounded-full">
+            <p className="font-bold bg-sky-500 inline-block rounded-full mb-4 px-4">
               Price
             </p>
             <p>
