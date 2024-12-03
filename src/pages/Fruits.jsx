@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const DailyFood = () => {
+const Fruits = () => {
   let [Viewitem, setViewitem] = useState(false);
 
   const settings = {
@@ -267,4 +267,4 @@ const DailyFood = () => {
   );
 };
 
-export default DailyFood;
+export default Fruits;
