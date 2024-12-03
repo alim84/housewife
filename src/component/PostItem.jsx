@@ -1,7 +1,37 @@
+import divisionss from "../json/Division.json"
+import districtss from "../json/Districts.json"
+import upzilass from "../json/Upazias.json"
+import { useEffect, useState } from "react";
+
 const PostItem = () => {
+
+  let [divisions, setDivisions] = useState([]);
+  let [districts, setDistricts] = useState([]);
+  let [upzilas, setUpzila] = useState([]);
+
+  let handleDivision=(e)=>{
+setDivisions(e.target.value)
+  }
+
+  let handleDistrict=(e)=>{
+    setDistricts(e.target.value)
+  }
+  let handleUpazila=(e)=>{
+    setUpzila(e.target.value)
+  }
+  useEffect(() => {
+    setDivisions(divisionss);
+  }, []);
+  useEffect(() => {
+    setDistricts(districtss);
+  }, []);
+  useEffect(() => {
+    setUpzila(upzilass);
+  }, []);
+
   return (
     <>
-      <div className="container mx-auto bg-red-400">
+      <div className="container mx-auto bg-red-400 shadow-lg shadow-gray-500">
         <h2 className="text-2xl text-white font-bold text-center py-12">
           POST YOUR ITEMS
           <hr />
@@ -9,52 +39,55 @@ const PostItem = () => {
         <div className="text-justify">
           <div className=" text-lg grid grid-cols-4 ml-20">
             <level className="font-bold text-white ">Poducts Name :</level>
-            <input className="my-4 py-2 rounded-md" type="text"></input>
+            <input className="my-4 py-2 px-2 rounded-md" type="text"></input>
           </div>
           <div className="text-lg grid grid-cols-4 ml-20 ">
             <level className="mr-6 font-bold text-white">Poducts Price :</level>
-            <input className="my-4 py-2 px-20 rounded-md" type="text"></input>
+            <input className="my-4 py-2 px-2 rounded-md" type="text"></input>
           </div>
           <div className=" text-lg grid grid-cols-4 ml-20 ">
             <level className="mr-6 font-bold text-white">Category :</level>
-            <input className="my-4 py-2 px-20 rounded-md" type="text"></input>
+            <input className="my-4 py-2 px-2 rounded-md" type="text"></input>
           </div>
           <div className=" text-lg grid grid-cols-4 ml-20 ">
             <level className="mr-6 font-bold text-white">Quantity :</level>
-            <input className="my-4 py-2 px-20 rounded-md" type="number"></input>
+            <input className="my-4 py-2 px-2 rounded-md" type="number"></input>
           </div>
           <div className=" text-lg grid grid-cols-4 ml-20 ">
             <level className="mr-6 font-bold text-white">Brand :</level>
-            <input className="my-4 py-2 px-20 rounded-md" type="text"></input>
+            <input className="my-4 py-2 px-2 rounded-md" type="text"></input>
           </div>
           <div className=" text-lg grid grid-cols-4 ml-20">
             <level className="mr-6 font-bold text-white">Rating :</level>
-            <input className="my-4 py-2 px-20 rounded-md" type="text"></input>
+            <input className="my-4 py-2 px-2 rounded-md" type="text"></input>
           </div>
           <div className=" text-lg  grid grid-cols-4 ml-20">
             <level className="mr-6 font-bold text-white">Offer Price :</level>
-            <input className="my-4 py-2 px-20 rounded-md" type="text"></input>
+            <input className="my-4 py-2 px-2 rounded-md" type="text"></input>
           </div>
           <div className=" text-lg grid grid-cols-4 ml-20">
             <level className="my-4 font-bold text-white mr-4">
-              Poducts Name :
+              Poducts Details :
             </level>
-            <textarea
-              className=" py-10 px-20  rounded-md"
-              type="text"
-            ></textarea>
+            <textarea className=" py-4 px-2  rounded-md" type="text"></textarea>
           </div>
         </div>
 
         <div className=" relative mx-auto gap-20 mt-10 p-5 outline-gray-400 outline outline-3 w-[1000px]">
-          <div className="grid grid-cols-4 gap-4">
+          <div className="grid grid-cols-3 gap-4">
             <div className="py-3">
               <level className="text-white font-semibold">বিভাগ:</level>
               <select
                 className="rounded-lg ml-3 border-none hover:border-indigo-300 py-[2px] px-5"
                 id="division"
                 name="division"
-              ></select>
+                onChange={handleDivision}
+              >
+                {divisions.map((item)=>(
+                  <option value={item.division_name}>{item.division_name}</option>
+                ))}
+
+              </select>
             </div>
             <div className="py-3">
               <level className="text-white font-semibold">জেলা:</level>
@@ -62,7 +95,12 @@ const PostItem = () => {
                 className="rounded-lg ml-3 border-none hover:border-indigo-300 py-[2px] px-5"
                 id="dist"
                 name="dist"
-              ></select>
+                onChange={handleDistrict}
+              >
+                {districts.map((item)=>(
+                  <option value={item.district_name}>{item.district_name}</option>
+                ))}
+              </select>
             </div>
 
             <div className="py-3">
@@ -71,12 +109,17 @@ const PostItem = () => {
                 className="rounded-lg ml-3 border-none hover:border-indigo-300 py-[2px] px-5"
                 id="upzila"
                 name="upzila"
-              ></select>
+                onChange={handleUpazila}
+              >
+          {upzilas.map((item)=>(
+                  <option value={item.upazila_name}>{item.upazila_name}</option>
+                ))}
+              </select>
             </div>
           </div>
 
           <div className="py-3 ">
-            <h3 className=" absolute translate-y-[-10px] text-yellow-200 bg-cyan-900 rounded-lg ml-2 px-3 top-0 left-0">
+            <h3 className=" absolute translate-y-[-14px] text-yellow-200 bg-red-400 rounded-lg ml-2 px-3 top-0 left-0">
               ঠিকানা:{" "}
             </h3>
             <level className="text-white font-semibold">পোস্ট অফিস :</level>
