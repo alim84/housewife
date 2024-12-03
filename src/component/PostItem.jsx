@@ -6,21 +6,39 @@ const PostItem = () => {
           POST YOUR ITEMS
           <hr />
         </h2>
-        <div className="text-justify justify-between">
-          <div className=" text-lg  text-center">
-            <level className="mr-6 font-bold text-white">Poducts Name :</level>
-            <input className="my-4 py-2 px-20 rounded-md" type="text"></input>
+        <div className="text-justify">
+          <div className=" text-lg grid grid-cols-4 ml-20">
+            <level className="font-bold text-white ">Poducts Name :</level>
+            <input className="my-4 py-2 rounded-md" type="text"></input>
           </div>
-          <div className="e text-lg  text-center ">
+          <div className="text-lg grid grid-cols-4 ml-20 ">
             <level className="mr-6 font-bold text-white">Poducts Price :</level>
             <input className="my-4 py-2 px-20 rounded-md" type="text"></input>
           </div>
-          <div className=" text-lg  text-center">
+          <div className=" text-lg grid grid-cols-4 ml-20 ">
+            <level className="mr-6 font-bold text-white">Category :</level>
+            <input className="my-4 py-2 px-20 rounded-md" type="text"></input>
+          </div>
+          <div className=" text-lg grid grid-cols-4 ml-20 ">
+            <level className="mr-6 font-bold text-white">Quantity :</level>
+            <input className="my-4 py-2 px-20 rounded-md" type="number"></input>
+          </div>
+          <div className=" text-lg grid grid-cols-4 ml-20 ">
+            <level className="mr-6 font-bold text-white">Brand :</level>
+            <input className="my-4 py-2 px-20 rounded-md" type="text"></input>
+          </div>
+          <div className=" text-lg grid grid-cols-4 ml-20">
+            <level className="mr-6 font-bold text-white">Rating :</level>
+            <input className="my-4 py-2 px-20 rounded-md" type="text"></input>
+          </div>
+          <div className=" text-lg  grid grid-cols-4 ml-20">
             <level className="mr-6 font-bold text-white">Offer Price :</level>
             <input className="my-4 py-2 px-20 rounded-md" type="text"></input>
           </div>
-          <div className=" flex justify-center items-center text-lg  text-center">
-            <level className=" font-bold text-white mr-4">Poducts Name :</level>
+          <div className=" text-lg grid grid-cols-4 ml-20">
+            <level className="my-4 font-bold text-white mr-4">
+              Poducts Name :
+            </level>
             <textarea
               className=" py-10 px-20  rounded-md"
               type="text"
@@ -28,10 +46,10 @@ const PostItem = () => {
           </div>
         </div>
 
-        <div className=" relative mx-auto gap-20 mt-10 p-5 outline-gray-400 outline outline-3 w-[800px]">
-          <div className="flex grid-cols-3 ">
+        <div className=" relative mx-auto gap-20 mt-10 p-5 outline-gray-400 outline outline-3 w-[1000px]">
+          <div className="grid grid-cols-4 gap-4">
             <div className="py-3">
-              <level className="text-white font-semibold">বিভাগ :</level>
+              <level className="text-white font-semibold">বিভাগ:</level>
               <select
                 className="rounded-lg ml-3 border-none hover:border-indigo-300 py-[2px] px-5"
                 id="division"
@@ -39,7 +57,7 @@ const PostItem = () => {
               ></select>
             </div>
             <div className="py-3">
-              <level className="text-white font-semibold">জেলা :</level>
+              <level className="text-white font-semibold">জেলা:</level>
               <select
                 className="rounded-lg ml-3 border-none hover:border-indigo-300 py-[2px] px-5"
                 id="dist"
@@ -48,7 +66,7 @@ const PostItem = () => {
             </div>
 
             <div className="py-3">
-              <level className="text-white font-semibold">উপজেলা :</level>
+              <level className="text-white font-semibold">উপজেলা:</level>
               <select
                 className="rounded-lg ml-3 border-none hover:border-indigo-300 py-[2px] px-5"
                 id="upzila"
@@ -63,7 +81,7 @@ const PostItem = () => {
             </h3>
             <level className="text-white font-semibold">পোস্ট অফিস :</level>
             <input
-              className="py-2 px-10 rounded-md ml-32 border outline-1 hover:outline-indigo-600 "
+              className="py-2 px-10 rounded-md ml-28 pl-1 border outline-1 hover:outline-indigo-600 "
               placeholder="পোস্ট অফিস "
               type="text"
               name="name"
@@ -74,7 +92,7 @@ const PostItem = () => {
               গ্রাম/মহল্লা/ওয়ার্ড :
             </level>
             <input
-              className="py-2 px-10 rounded-md ml-24 border outline-1 hover:outline-indigo-600 "
+              className="py-2 px-10 rounded-md ml-24 pl-1 border outline-1 hover:outline-indigo-600 "
               placeholder="গ্রাম/মহল্লা/ওয়ার্ড "
               type="text"
               name="name"
@@ -83,7 +101,7 @@ const PostItem = () => {
           <div className="py-3">
             <level className="text-white font-semibold">রাস্তা নং :</level>
             <input
-              className="py-2 px-10 rounded-md ml-40 border outline-1 hover:outline-indigo-600 "
+              className="py-2 px-10 rounded-md ml-40 border pl-1 outline-1 hover:outline-indigo-600 "
               placeholder="রাস্তা নং"
               type="text"
               name="name"
@@ -92,7 +110,7 @@ const PostItem = () => {
           <div className="py-3 ">
             <level className="text-white font-semibold">বাড়ি নং :</level>
             <input
-              className="py-2 px-10 rounded-md ml-40 border outline-1 hover:outline-indigo-600 "
+              className="py-2 px-10 rounded-md ml-40  pl-1 border outline-1 hover:outline-indigo-600 "
               placeholder="বাড়ি"
               type="text"
               name="name"
