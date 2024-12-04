@@ -9,7 +9,7 @@ const Stationery = () => {
       <div className="py-4">
         <div className="container mx-auto  ">
           <div className="bg-red-300 py-5">
-            <h1 className="px-4 text-2xl text-gray-700">দৈন্দিদিন বাজার</h1>
+            <h1 className="px-4 text-2xl text-gray-700">Stationery</h1>
           </div>
         </div>
       </div>

@@ -22,19 +22,19 @@ const Topmenu = () => {
               </Link>
             </div>
             <div className="border-l-2 border-r-2 px-2 hover:text-white ">
-              মতামত
+              Opinion
             </div>
             <div className="border-l-2 border-r-2 px-2 hover:text-white ">
-              অভিযোগ
+              Complaint
             </div>
           </div>
           <div className="ml-48">
             <ul className="flex gap-8">
               <li className="py-3 px-5 border-2 hover:bg-red-300 rounded-md hover:text-white">
-                রেজিস্ট্রেশন
+                <Link to="/registration">Registration</Link>
               </li>
               <li className="py-3 px-5 border-2 hover:bg-red-300 rounded-md hover:text-white">
-                প্রবেশ
+                Login
               </li>
             </ul>
           </div>
@@ -48,12 +48,12 @@ const Topmenu = () => {
             >
               {" "}
               <CiMenuFries />
-              সকল খাবার <IoMdArrowDropdown className="mx-[48px] end-0" />{" "}
+              Categories <IoMdArrowDropdown className="mx-[48px] end-0" />{" "}
             </button>
           </div>
           <div className="flex gap-5 items-center">
             <button className="flex gap-2 items-center font-semibold py-3 px-10 bg-white rounded-tl-lg rounded-br-lg hover:text-red-400">
-              <GrAnnounce className="hover:text-red-400" /> অফার
+              <GrAnnounce className="hover:text-red-400" /> OFFER
             </button>
             <input
               className="py-3 px-32 rounded-lg"
@@ -63,7 +63,7 @@ const Topmenu = () => {
             <button className=" flex items-center gap-2 py-3 px-12 font-semibold bg-white rounded-md hover:text-red-400">
               {" "}
               <GiCook className="hover:text-red-400" />
-              গৃহিনী
+              House Wife
             </button>
             <button className="py-2 px-4 bg-red-400">
               <FaCartPlus className="text-white text-2xl font-bold" />
@@ -71,70 +71,70 @@ const Topmenu = () => {
           </div>
         </div>
       </div>
-      {menu && (
+      {!menu && (
         <div className=" w-[300px]  bg-red-300 absolute translate-x-[300px] z-10">
           <div className="flex justify-between items-center border-b-2 hover:bg-red-400 ">
             <button className="px-20 py-6 relative text-md font-semibold hover:text-white">
               <Link to="/Foods">Foods</Link>
             </button>
           </div>
-          <div className="absolute translate-y-[-60px]  px-3 py-[20px] rounded-r-full bg-red-200 shadow-lg shadow-red-800"></div>
+          <div className="absolute translate-y-[-60px]  px-3 py-[20px] rounded-r-full bg-red-300 shadow-lg shadow-red-800"></div>
 
           <div className="flex justify-between items-center border-b-2 hover:bg-red-400 ">
             <button className="px-20 py-6 relative text-md font-semibold hover:text-white">
               <Link to="/fish">Fish</Link>
             </button>
           </div>
-          <div className="absolute translate-y-[-60px]  px-3 py-[20px] rounded-r-full bg-red-200 shadow-lg shadow-red-800"></div>
+          <div className="absolute translate-y-[-60px]  px-3 py-[20px] rounded-r-full bg-red-300 shadow-lg shadow-red-800"></div>
 
           <div className="flex justify-between items-center border-b-2 hover:bg-red-400 ">
             <button className="px-20 py-6 relative text-md font-semibold hover:text-white">
-              <Link to="/fish">Meat</Link>
+              <Link to="/meat">Meat</Link>
             </button>
           </div>
-          <div className="absolute translate-y-[-60px]  px-3 py-[20px] rounded-r-full bg-red-200 shadow-lg shadow-red-800"></div>
+          <div className="absolute translate-y-[-60px]  px-3 py-[20px] rounded-r-full bg-red-300 shadow-lg shadow-red-800"></div>
 
           <div className="flex justify-between items-center border-b-2 hover:bg-red-400 ">
             <button className="px-20 py-6 relative text-md font-semibold hover:text-white">
-              <Link to="/fish">Personal Care</Link>
+              <Link to="/personalcare">Personal Care</Link>
             </button>
           </div>
-          <div className="absolute translate-y-[-60px]  px-3 py-[20px] rounded-r-full bg-red-200 shadow-lg shadow-red-800"></div>
+          <div className="absolute translate-y-[-60px]  px-3 py-[20px] rounded-r-full bg-red-300 shadow-lg shadow-red-800"></div>
 
           <div className="flex justify-between items-center border-b-2 hover:bg-red-400 ">
             <button className="px-20 py-6 relative text-md font-semibold hover:text-white">
-              <Link to="/fish">Stationary</Link>
+              <Link to="/stationery">Stationary</Link>
             </button>
           </div>
-          <div className="absolute translate-y-[-60px]  px-3 py-[20px] rounded-r-full bg-red-200 shadow-lg shadow-red-800"></div>
+          <div className="absolute translate-y-[-60px]  px-3 py-[20px] rounded-r-full bg-red-300 shadow-lg shadow-red-800"></div>
 
           <div className="flex justify-between items-center border-b-2 hover:bg-red-400 ">
             <button className="px-20 py-6 relative text-md font-semibold hover:text-white">
-              <Link to="/fish">Vegetables</Link>
+              <Link to="/vegetables">Vegetables</Link>
             </button>
           </div>
-          <div className="absolute translate-y-[-60px]  px-3 py-[20px] rounded-r-full bg-red-200 shadow-lg shadow-red-800"></div>
+          <div className="absolute translate-y-[-60px]  px-3 py-[20px] rounded-r-full bg-red-300 shadow-lg shadow-red-800"></div>
 
           <div className="flex justify-between items-center border-b-2 hover:bg-red-400 ">
             <button className="px-20 py-6 relative text-md font-semibold hover:text-white">
-              <Link to="/fish">Fruits</Link>
+              <Link to="/fruits">Fruits</Link>
             </button>
           </div>
-          <div className="absolute translate-y-[-60px]  px-3 py-[20px] rounded-r-full bg-red-200 shadow-lg shadow-red-800"></div>
+          <div className="absolute translate-y-[-60px]  px-3 py-[20px] rounded-r-full bg-red-300 shadow-lg shadow-red-800"></div>
 
           <div className="flex justify-between items-center border-b-2 hover:bg-red-400 ">
             <button className="px-20 py-6 relative text-md font-semibold hover:text-white">
-              <Link to="/fish">Frozen</Link>
+              <Link to="/frozen">Frozen</Link>
             </button>
           </div>
-          <div className="absolute translate-y-[-60px]  px-3 py-[20px] rounded-r-full bg-red-200 shadow-lg shadow-red-800"></div>
+          <div className="absolute translate-y-[-60px]  px-3 py-[20px] rounded-r-full bg-red-300 shadow-lg shadow-red-800"></div>
 
           <div className="flex justify-between items-center border-b-2 hover:bg-red-400 ">
             <button className="px-20 py-6 relative text-md font-semibold hover:text-white">
-              <Link to="/fish">Meat</Link>
+              <Link to="/dairy">Dairy</Link>
             </button>
           </div>
-          <div className="absolute translate-y-[-60px]  px-3 py-[20px] rounded-r-full bg-red-200 shadow-lg shadow-red-800"></div>
+          <div className="absolute translate-y-[-60px]  px-3 py-[20px] rounded-r-full bg-red-300 shadow-lg shadow-red-800"></div>
         </div>
       )}
     </>

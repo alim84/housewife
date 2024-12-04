@@ -13,7 +13,7 @@ const Footer = () => {
         <div className="container mx-auto py-10 px-20">
           <hr></hr>
           <h2 className="text-3xl  font-bold  text-center text-white py-4 ">
-            গৃহিনী
+            ASMA
           </h2>
           <div className=" flex justify-center gap-6 text-2xl text-white py-4">
             <CiFacebook />

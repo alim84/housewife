@@ -23,11 +23,11 @@ const Cake = () => {
       <div className="py-4">
         <div className="container mx-auto  ">
           <div className="bg-red-300 py-5">
-            <h1 className="px-4 text-2xl text-gray-700">কেক আইটেম</h1>
+            <h1 className="px-4 text-2xl text-gray-700">Stationery Item</h1>
           </div>
         </div>
       </div>
-      <div className="container mx-auto justify-center items-center slider-container">
+      <div className="container  mx-auto justify-center items-center slider-container">
         <Slider {...settings}>
           <div>
             <div className="container mx-auto justify-center items-center">

@@ -9,11 +9,11 @@ const Fish = () => {
       <div className="py-4">
         <div className="container mx-auto  ">
           <div className="bg-red-300 py-5">
-            <h1 className="px-4 text-2xl text-gray-700">কেক আইটেম</h1>
+            <h1 className="px-4 text-2xl text-gray-700">Fishs</h1>
           </div>
         </div>
       </div>
-      <div className="container mx-auto justify-center items-center slider-container">
+      <div className="container mx-auto flex justify-center items-center slider-container">
         <div>
           <div className="container mx-auto justify-center items-center">
             <div className="w-[255px] h-[350px] bg-red-100 shadow-md shadow-red-300 hover:border-2  hover:border-green-500 ">
