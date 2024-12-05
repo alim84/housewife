@@ -30,11 +30,7 @@ const Footer = () => {
               <p className="text-justify">
                 Khaas food is an innovative agri-tech startup based in
                 Bangladesh with the vision to create a future where safe agro
-                food is the standard, not the exception. We envision and inspire
-                positive impact in the world where every individual has access
-                to responsibly sourced, safe and nutritious products at its
-                originality that support their health and the health of the
-                environment.
+                food is the standard, not the exception. 
               </p>
               <div>
                 <h3 className="font-bold text-xl text-red-400 pt-4 mb-4">

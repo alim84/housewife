@@ -18,23 +18,23 @@ const Topmenu = () => {
             <div className="border-l-2 border-r-2 px-2 hover:text-white ">
               <Link>
                 {" "}
-                <FaHome className="text-2xl" />
+                <FaHome className="text-2xl text-white" />
               </Link>
             </div>
             <div className="border-l-2 border-r-2 px-2 hover:text-white ">
-              Opinion
+            <Link to="/registration" className="font-bold text-white">Opinion</Link>
             </div>
             <div className="border-l-2 border-r-2 px-2 hover:text-white ">
-              Complaint
+            <Link to="/registration" className="font-bold text-white">Comple </Link>
             </div>
           </div>
           <div className="ml-48">
             <ul className="flex gap-8">
               <li className="py-3 px-5 border-2 hover:bg-red-300 rounded-md hover:text-white">
-                <Link to="/registration">Registration</Link>
+                <Link to="/registration" className="font-bold text-white">Registration</Link>
               </li>
               <li className="py-3 px-5 border-2 hover:bg-red-300 rounded-md hover:text-white">
-                Login
+              <Link to="/registration" className="font-bold text-white">Login</Link>
               </li>
             </ul>
           </div>
@@ -47,13 +47,13 @@ const Topmenu = () => {
               onClick={() => submenu(!menu)}
             >
               {" "}
-              <CiMenuFries />
-              Categories <IoMdArrowDropdown className="mx-[48px] end-0" />{" "}
+              <CiMenuFries className="text-green-600" />
+              <h4 className="text-red-400">Categories</h4> <IoMdArrowDropdown className="mx-[48px] end-0" />{" "}
             </button>
           </div>
           <div className="flex gap-5 items-center">
             <button className="flex gap-2 items-center font-semibold py-3 px-10 bg-white rounded-tl-lg rounded-br-lg hover:text-red-400">
-              <GrAnnounce className="hover:text-red-400" /> OFFER
+              <GrAnnounce className="hover:text-red-400 text-green-600"  /> <h4 className="text-red-400"> OFFER</h4>
             </button>
             <input
               className="py-3 px-32 rounded-lg"
@@ -62,8 +62,8 @@ const Topmenu = () => {
             />
             <button className=" flex items-center gap-2 py-3 px-12 font-semibold bg-white rounded-md hover:text-red-400">
               {" "}
-              <GiCook className="hover:text-red-400" />
-              House Wife
+              <GiCook className="hover:text-red-400 text-green-600" />
+             <h4 className="text-red-400">  House Wife </h4>
             </button>
             <button className="py-2 px-4 bg-red-400">
               <FaCartPlus className="text-white text-2xl font-bold" />
