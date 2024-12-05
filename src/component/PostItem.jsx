@@ -1,24 +1,23 @@
-import divisionss from "../json/Division.json"
-import districtss from "../json/Districts.json"
-import upzilass from "../json/Upazias.json"
+import divisionss from "../json/Division.json";
+import districtss from "../json/Districts.json";
+import upzilass from "../json/Upazias.json";
 import { useEffect, useState } from "react";
 
 const PostItem = () => {
-
   let [divisions, setDivisions] = useState([]);
   let [districts, setDistricts] = useState([]);
   let [upzilas, setUpzila] = useState([]);
 
-  let handleDivision=(e)=>{
-setDivisions(e.target.value)
-  }
+  let handleDivision = (e) => {
+    setDivisions(e.target.value);
+  };
 
-  let handleDistrict=(e)=>{
-    setDistricts(e.target.value)
-  }
-  let handleUpazila=(e)=>{
-    setUpzila(e.target.value)
-  }
+  let handleDistrict = (e) => {
+    setDistricts(e.target.value);
+  };
+  let handleUpazila = (e) => {
+    setUpzila(e.target.value);
+  };
   useEffect(() => {
     setDivisions(divisionss);
   }, []);
@@ -36,40 +35,64 @@ setDivisions(e.target.value)
           POST YOUR ITEMS
           <hr />
         </h2>
-        <div className="text-justify">
+        <div className="text-justify ">
           <div className=" text-lg grid grid-cols-4 ml-20">
             <level className="font-bold text-white ">Poducts Name :</level>
-            <input className="my-4 py-2 px-2 rounded-md" type="text"></input>
+            <input
+              className="my-4 py-2 px-2 rounded-md focus:outline-none focus:ring focus:border-green-800"
+              type="text"
+            ></input>
           </div>
           <div className="text-lg grid grid-cols-4 ml-20 ">
             <level className="mr-6 font-bold text-white">Poducts Price :</level>
-            <input className="my-4 py-2 px-2 rounded-md" type="text"></input>
+            <input
+              className="my-4 py-2 px-2 rounded-md focus:outline-none focus:ring focus:border-green-800"
+              type="text"
+            ></input>
           </div>
           <div className=" text-lg grid grid-cols-4 ml-20 ">
             <level className="mr-6 font-bold text-white">Category :</level>
-            <input className="my-4 py-2 px-2 rounded-md" type="text"></input>
+            <input
+              className="my-4 py-2 px-2 rounded-md focus:outline-none focus:ring focus:border-green-800 "
+              type="text"
+            ></input>
           </div>
           <div className=" text-lg grid grid-cols-4 ml-20 ">
             <level className="mr-6 font-bold text-white">Quantity :</level>
-            <input className="my-4 py-2 px-2 rounded-md" type="number"></input>
+            <input
+              className="my-4 py-2 px-2 rounded-md focus:outline-none focus:ring focus:border-green-800"
+              type="number"
+            ></input>
           </div>
           <div className=" text-lg grid grid-cols-4 ml-20 ">
             <level className="mr-6 font-bold text-white">Brand :</level>
-            <input className="my-4 py-2 px-2 rounded-md" type="text"></input>
+            <input
+              className="my-4 py-2 px-2 rounded-md focus:outline-none focus:ring focus:border-green-800"
+              type="text"
+            ></input>
           </div>
           <div className=" text-lg grid grid-cols-4 ml-20">
             <level className="mr-6 font-bold text-white">Rating :</level>
-            <input className="my-4 py-2 px-2 rounded-md" type="text"></input>
+            <input
+              className="my-4 py-2 px-2 rounded-md focus:outline-none focus:ring focus:border-green-800"
+              type="text"
+            ></input>
           </div>
           <div className=" text-lg  grid grid-cols-4 ml-20">
             <level className="mr-6 font-bold text-white">Offer Price :</level>
-            <input className="my-4 py-2 px-2 rounded-md" type="text"></input>
+            <input
+              className="my-4 py-2 px-2 rounded-md focus:outline-none focus:ring focus:border-green-800"
+              type="text"
+            ></input>
           </div>
           <div className=" text-lg grid grid-cols-4 ml-20">
             <level className="my-4 font-bold text-white mr-4">
               Poducts Details :
             </level>
-            <textarea className=" py-4 px-2  rounded-md" type="text"></textarea>
+            <textarea
+              className=" py-4 px-2  rounded-md focus:outline-none focus:ring focus:border-green-800"
+              type="text"
+            ></textarea>
           </div>
         </div>
 
@@ -83,10 +106,11 @@ setDivisions(e.target.value)
                 name="division"
                 onChange={handleDivision}
               >
-                {divisions.map((item)=>(
-                  <option value={item.division_name}>{item.division_name}</option>
+                {divisions.map((item) => (
+                  <option key={item} value={item.division_name}>
+                    {item.division_name}
+                  </option>
                 ))}
-
               </select>
             </div>
             <div className="py-3">
@@ -97,8 +121,10 @@ setDivisions(e.target.value)
                 name="dist"
                 onChange={handleDistrict}
               >
-                {districts.map((item)=>(
-                  <option value={item.district_name}>{item.district_name}</option>
+                {districts.map((item) => (
+                  <option key={item} value={item.district_name}>
+                    {item.district_name}
+                  </option>
                 ))}
               </select>
             </div>
@@ -111,8 +137,10 @@ setDivisions(e.target.value)
                 name="upzila"
                 onChange={handleUpazila}
               >
-          {upzilas.map((item)=>(
-                  <option value={item.upazila_name}>{item.upazila_name}</option>
+                {upzilas.map((item) => (
+                  <option key={item} value={item.upazila_name}>
+                    {item.upazila_name}
+                  </option>
                 ))}
               </select>
             </div>
@@ -124,7 +152,7 @@ setDivisions(e.target.value)
             </h3>
             <level className="text-white font-semibold">পোস্ট অফিস :</level>
             <input
-              className="py-2 px-10 rounded-md ml-28 pl-1 border outline-1 hover:outline-indigo-600 "
+              className="py-2 px-10 rounded-md ml-28 pl-1 border outline-1 hover:outline-indigo-600 focus:outline-none focus:ring focus:border-green-800 "
               placeholder="পোস্ট অফিস "
               type="text"
               name="name"
@@ -135,7 +163,7 @@ setDivisions(e.target.value)
               গ্রাম/মহল্লা/ওয়ার্ড :
             </level>
             <input
-              className="py-2 px-10 rounded-md ml-24 pl-1 border outline-1 hover:outline-indigo-600 "
+              className="py-2 px-10 rounded-md ml-24 pl-1 border outline-1 hover:outline-indigo-600  focus:outline-none focus:ring focus:border-green-800"
               placeholder="গ্রাম/মহল্লা/ওয়ার্ড "
               type="text"
               name="name"
@@ -144,7 +172,7 @@ setDivisions(e.target.value)
           <div className="py-3">
             <level className="text-white font-semibold">রাস্তা নং :</level>
             <input
-              className="py-2 px-10 rounded-md ml-40 border pl-1 outline-1 hover:outline-indigo-600 "
+              className="py-2 px-10 rounded-md ml-40 border pl-1 outline-1 hover:outline-indigo-600 focus:outline-none focus:ring focus:border-green-800 "
               placeholder="রাস্তা নং"
               type="text"
               name="name"
@@ -153,7 +181,7 @@ setDivisions(e.target.value)
           <div className="py-3 ">
             <level className="text-white font-semibold">বাড়ি নং :</level>
             <input
-              className="py-2 px-10 rounded-md ml-40  pl-1 border outline-1 hover:outline-indigo-600 "
+              className="py-2 px-10 rounded-md ml-40  pl-1 border outline-1 hover:outline-indigo-600 focus:outline-none focus:ring focus:border-green-800 "
               placeholder="বাড়ি"
               type="text"
               name="name"
@@ -166,7 +194,7 @@ setDivisions(e.target.value)
         </div>
         <div className="pb-20">
           <button
-            className="flex mx-auto py-3 px-32  bg-white rounded-md text-red-500 font-bold  "
+            className="flex mx-auto py-3 px-32  bg-white rounded-md text-red-500 font-bold hover:bg-green-800 "
             type="submit"
           >
             Submit
