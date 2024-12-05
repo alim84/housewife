@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 const DailyFood = () => {
   let [Viewitem, setViewitem] = useState(false);
+  const [counter, setCounter] = useState(0);
 
   const settings = {
     dots: true,
@@ -255,7 +256,22 @@ const DailyFood = () => {
               asfdljaflakdsjfjdsajfasd ladskjfldajfadsjf
             </p>
             <div className="flex mt-10 items-center">
-              <div className="font-bold ">count</div>
+              <div className="flex items-center ">
+                <button
+                  className="px-2  bg-green-800 rounded-lg mr-2  text-white"
+                  onClick={() => setCounter(counter + 1)}
+                >
+                  +
+                </button>
+                {/* <button onClick={handleReset}>Reset</button> */}
+                <p> {counter}</p>
+                <button
+                  className="px-2  bg-red-800 rounded-lg mr-2  text-white ml-2"
+                  onClick={() => setCounter(counter - 1)}
+                >
+                  -
+                </button>
+              </div>
               <button className="flex mx-auto py-3 px-7 text-white font-bold bg-red-400 hover:text-red-500 hover:bg-red-300 hover:font-bold ">
                 ADD TO CART
               </button>

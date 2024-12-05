@@ -18,52 +18,62 @@ const Topmenu = () => {
             <div className="border-l-2 border-r-2 px-2 hover:text-white ">
               <Link>
                 {" "}
-                <FaHome className="text-2xl text-white" />
+                <FaHome className="text-2xl text-white hover:text-green-800" />
               </Link>
             </div>
             <div className="border-l-2 border-r-2 px-2 hover:text-white ">
-            <Link to="/registration" className="font-bold text-white">Opinion</Link>
+              <Link to="/registration" className="font-bold text-white hover:text-green-800">
+                Opinion
+              </Link>
             </div>
             <div className="border-l-2 border-r-2 px-2 hover:text-white ">
-            <Link to="/registration" className="font-bold text-white">Comple </Link>
+              <Link to="/registration" className="font-bold text-white hover:text-green-800">
+                Comple{" "}
+              </Link>
             </div>
           </div>
           <div className="ml-48">
             <ul className="flex gap-8">
               <li className="py-3 px-5 border-2 hover:bg-red-300 rounded-md hover:text-white">
-                <Link to="/registration" className="font-bold text-white">Registration</Link>
+                <Link to="/registration" className="font-bold text-white hover:text-green-800">
+                  Registration
+                </Link>
               </li>
               <li className="py-3 px-5 border-2 hover:bg-red-300 rounded-md hover:text-white">
-              <Link to="/registration" className="font-bold text-white">Login</Link>
+                <Link to="/registration" className="font-bold text-white hover:text-green-800">
+                  Login
+                </Link>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="flex justify-between items-center">
-          <div className="flex items-center gap-40 px-4 py-3 bg-white rounded-md">
+          <div className="flex items-center gap-40 px-4 py-3 bg-white rounded-md hover:bg-red-200">
             <button
               className="flex font-semibold gap-4  items-center"
               onClick={() => submenu(!menu)}
             >
               {" "}
               <CiMenuFries className="text-green-600" />
-              <h4 className="text-red-400">Categories</h4> <IoMdArrowDropdown className="mx-[48px] end-0" />{" "}
+              <h4 className="text-red-400 hover:text-green-800">Categories</h4>{" "}
+              <IoMdArrowDropdown className="mx-[48px] end-0" />{" "}
             </button>
           </div>
-          <div className="flex gap-5 items-center">
-            <button className="flex gap-2 items-center font-semibold py-3 px-10 bg-white rounded-tl-lg rounded-br-lg hover:text-red-400">
-              <GrAnnounce className="hover:text-red-400 text-green-600"  /> <h4 className="text-red-400"> OFFER</h4>
+          <div className="flex gap-5 items-center ">
+            <button className="flex gap-2 items-center hover:bg-red-200 font-semibold py-3 px-10 bg-white rounded-tl-lg rounded-br-lg hover:text-red-400">
+              <GrAnnounce className="hover:text-red-400 text-green-600" />{" "}
+              <h4 className="text-red-400 hover:text-green-800"> OFFER</h4>
             </button>
             <input
-              className="py-3 px-32 rounded-lg"
+              className="py-3 px-32 rounded-lg text-gray-800"
               type="text"
               placeholder="Search Your Choice"
             />
-            <button className=" flex items-center gap-2 py-3 px-12 font-semibold bg-white rounded-md hover:text-red-400">
+            <button className=" flex items-center hover:bg-red-200 gap-2 py-3 px-12 font-semibold bg-white rounded-md hover:text-red-400">
               {" "}
               <GiCook className="hover:text-red-400 text-green-600" />
-             <h4 className="text-red-400">  House Wife </h4>
+              <h4 className="text-red-400 hover:text-green-800"> House Wife </h4>
             </button>
             <button className="py-2 px-4 bg-red-400">
               <FaCartPlus className="text-white text-2xl font-bold" />

@@ -4,16 +4,9 @@ import { CiSearch } from "react-icons/ci";
 const Vegetables = () => {
   let [Viewitem, setViewitem] = useState(false);
 
-  // function Counter() {
+ 
   const [counter, setCounter] = useState(0);
-  // const [initialCount, setInitialCount] = useState(0);
-  // const handleInitialCountChange = (event) => {
-  //    setInitialCount(event.target.value);
-  // };
-  // const handleReset = () => {
-  //    setCounter(initialCount);
-  // };
-  // }
+
 
   return (
     <>
