@@ -165,7 +165,7 @@ const Topmenu = () => {
         </div>
       )}
 
-      <div className="absolute bg-gray-500 rounded-lg translate-x-[800px]   w-[500px] h-[500px] z-50 shadow-xl shadow-gray-500">
+      {/* <div className="absolute bg-gray-500 rounded-lg translate-x-[800px]   w-[500px] h-[500px] z-50 shadow-xl shadow-gray-500">
         <div className="">
           <h2 className="text-2xl font-bold text-center pt-10">Logo</h2>
           <h3 className="text-2xl font-bold text-center pt-10 mb-5">Sign In</h3>
@@ -181,7 +181,7 @@ const Topmenu = () => {
             CONTINUE
           </button>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };
