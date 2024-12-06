@@ -24,6 +24,8 @@ import PersonalCare from "./pages/PersonalCare";
 import Stationery from "./pages/Stationery";
 import Vegetables from "./pages/Vegetables";
 import UserDashboard from "./component/userLogin/UserDashboard";
+import PersonalInfo from "./component/userLogin/PersonalInfo";
+import MyOrders from "./component/userLogin/MyOrders";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
@@ -47,6 +49,8 @@ const router = createBrowserRouter(
         <Route path="/stationery" element={<Stationery />}></Route>
         <Route path="/vegetables" element={<Vegetables />}></Route>
         <Route path="/userdashboard" element={<UserDashboard />}></Route>
+        <Route path="/personalinfo" element={<PersonalInfo />}></Route>
+        <Route path="/myorder" element={<MyOrders />}></Route>
       </Route>
     </>
   )
