@@ -23,6 +23,7 @@ import OilItem from "./pages/OilItem";
 import PersonalCare from "./pages/PersonalCare";
 import Stationery from "./pages/Stationery";
 import Vegetables from "./pages/Vegetables";
+import UserDashboard from "./component/userLogin/UserDashboard";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
@@ -45,6 +46,7 @@ const router = createBrowserRouter(
         <Route path="/personalcare" element={<PersonalCare />}></Route>
         <Route path="/stationery" element={<Stationery />}></Route>
         <Route path="/vegetables" element={<Vegetables />}></Route>
+        <Route path="/userdashboard" element={<UserDashboard />}></Route>
       </Route>
     </>
   )
