@@ -26,6 +26,8 @@ import Vegetables from "./pages/Vegetables";
 import UserDashboard from "./component/userLogin/UserDashboard";
 import PersonalInfo from "./component/userLogin/PersonalInfo";
 import MyOrders from "./component/userLogin/MyOrders";
+import Profile from "./component/userLogin/Profile";
+import userlayout from "./layout/userlayout";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
@@ -49,8 +51,23 @@ const router = createBrowserRouter(
         <Route path="/stationery" element={<Stationery />}></Route>
         <Route path="/vegetables" element={<Vegetables />}></Route>
         <Route path="/userdashboard" element={<UserDashboard />}></Route>
-        <Route path="/personalinfo" element={<PersonalInfo />}></Route>
-        <Route path="/myorder" element={<MyOrders />}></Route>
+        <Route
+          path="/userdashboard/personalinfo"
+          element={<PersonalInfo />}
+        ></Route>
+        <Route path="/userdashboard/myorder" element={<MyOrders />}></Route>
+        <Route path="/profile" element={<Profile />}></Route>
+      </Route>
+
+      <Route path="/" element={<userlayout />}>
+        <Route index element={<UserDashboard />} />
+
+        <Route
+          path="/userdashboard/personalinfo"
+          element={<PersonalInfo />}
+        ></Route>
+        <Route path="/userdashboard/myorder" element={<MyOrders />}></Route>
+        <Route path="/profile" element={<Profile />}></Route>
       </Route>
     </>
   )

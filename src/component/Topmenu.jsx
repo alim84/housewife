@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 
 const Topmenu = () => {
   let [menu, submenu] = useState(false);
+  let [login, Setlogin] = useState(false);
 
   return (
     <>
@@ -51,6 +52,7 @@ const Topmenu = () => {
               <li className="py-3 px-5 border-2 hover:bg-red-300 rounded-md hover:text-white">
                 <Link
                   to=""
+                  onClick={() => Setlogin(!login)}
                   className="font-bold text-white hover:text-green-800"
                 >
                   Login
@@ -98,7 +100,7 @@ const Topmenu = () => {
           </div>
         </div>
       </div>
-      {!menu && (
+      {menu && (
         <div className=" w-[300px]  bg-red-300 absolute translate-x-[300px] z-10">
           <div className="flex justify-between items-center border-b-2 hover:bg-red-400 ">
             <button className="px-20 py-6 relative text-md font-semibold hover:text-white">
@@ -165,23 +167,27 @@ const Topmenu = () => {
         </div>
       )}
 
-      {/* <div className="absolute bg-gray-500 rounded-lg translate-x-[800px]   w-[500px] h-[500px] z-50 shadow-xl shadow-gray-500">
-        <div className="">
-          <h2 className="text-2xl font-bold text-center pt-10">Logo</h2>
-          <h3 className="text-2xl font-bold text-center pt-10 mb-5">Sign In</h3>
-          <hr className="bg-blue-500" />
+      {login && (
+        <div className="absolute bg-gray-500 rounded-lg translate-x-[800px]   w-[500px] h-[500px] z-50 shadow-xl shadow-gray-500">
+          <div className="">
+            <h2 className="text-2xl font-bold text-center pt-10">Logo</h2>
+            <h3 className="text-2xl font-bold text-center pt-10 mb-5">
+              Sign In
+            </h3>
+            <hr className="bg-blue-500" />
+          </div>
+          <div className="">
+            <input
+              className="ml-20 mt-10 px-20 text-center py-3 block focus:outline-none border border-gray-100 focus:ring focus:border-blue-500"
+              type="text"
+              placeholder="Mobile or Email"
+            />
+            <button className="px-32 mt-10 ml-20 py-3 bg-red-300 rounded-md font-semibold text-green-800 ">
+              <Link to="/userdashboard"> CONTINUE</Link>
+            </button>
+          </div>
         </div>
-        <div className="">
-          <input
-            className="ml-20 mt-10 px-20 text-center py-3 block focus:outline-none border border-gray-100 focus:ring focus:border-blue-500"
-            type="text"
-            placeholder="Mobile or Email"
-          />
-          <button className="px-32 mt-10 ml-20 py-3 bg-red-300 rounded-md font-semibold text-green-800 ">
-            CONTINUE
-          </button>
-        </div>
-      </div> */}
+      )}
     </>
   );
 };
