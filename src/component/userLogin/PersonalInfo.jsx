@@ -3,13 +3,13 @@ const PersonalInfo = () => {
   return (
     <>
       <div className="w-[1150px] ml-2 ">
-        <div className="flex items-center px-5 py-6 mt-10 bg-gray-300">
+        <div className="flex items-center px-5 py-6 mt-10 bg-red-400">
           <div className="w-[50px] h-[50px] bg-red-300 rounded-full mr-3">
             <FaUserTie className="text-green-800 text-xl ml-[15px] mt-[10px]" />
           </div>
           <div>
-            <h2 className="font-bold text-xl ">Personal Info</h2>
-            <p className="text-[12px]">Manage all your personal information</p>
+            <h2 className="font-bold text-xl text-white ">Personal Info</h2>
+            <p className="text-[12px] text-white">Manage all your personal information</p>
           </div>
         </div>
         <div className="grid grid-cols-3 p-10">

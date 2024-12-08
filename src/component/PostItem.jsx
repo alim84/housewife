@@ -94,6 +94,28 @@ const PostItem = () => {
               type="text"
             ></textarea>
           </div>
+          <hr className="m-10" />
+          <div className=" text-lg  grid grid-cols-4 ml-20">
+            <level className="mr-6 font-bold text-white">Full Name :</level>
+            <input
+              className="my-4 py-2 px-2 rounded-md focus:outline-none focus:ring focus:border-green-800"
+              type="text"
+            ></input>
+          </div>
+          <div className=" text-lg  grid grid-cols-4 ml-20">
+            <level className="mr-6 font-bold text-white">Mobile No. :</level>
+            <input
+              className="my-4 py-2 px-2 rounded-md focus:outline-none focus:ring focus:border-green-800"
+              type="text"
+            ></input>
+          </div>
+          <div className=" text-lg grid grid-cols-4 ml-20">
+            <level className="my-4 font-bold text-white mr-4">Address :</level>
+            <textarea
+              className=" py-4 px-2  rounded-md focus:outline-none focus:ring focus:border-green-800"
+              type="text"
+            ></textarea>
+          </div>
         </div>
 
         <div className=" relative mx-auto gap-20 mt-10 p-5 outline-gray-400 outline outline-3 w-[1000px]">

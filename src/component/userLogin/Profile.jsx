@@ -12,9 +12,9 @@ const Profile = () => {
             <h2 className="font-bold text-2xl text-center mt-5">
               Profile Name
             </h2>
-            <div className="flex justify-center ">
+            <div className=" flex justify-center rounded-full h-[150px] ">
               <img
-                className="w-[120px] h-[150px] rounded-full mt-5 "
+                className=" rounded-full mt-5 "
                 src="/public/Cake-1.jpg"
               ></img>
             </div>
