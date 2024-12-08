@@ -3,7 +3,7 @@ import { LiaFirstOrderAlt } from "react-icons/lia";
 const MyOrders = () => {
   return (
     <>
-      <div className="w-[1100px] ml-12 ">
+      <div className="w-[1150px] ml-2 ">
         <div className="flex items-center px-5 py-6 mt-10 bg-red-400">
           <div className="w-[50px] h-[50px] bg-yellow-100 rounded-full mr-3">
             <LiaFirstOrderAlt className="text-red-400 text-3xl ml-[10px] mt-[10px]" />

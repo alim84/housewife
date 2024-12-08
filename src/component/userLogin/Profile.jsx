@@ -6,8 +6,8 @@ import { MdDashboardCustomize } from "react-icons/md";
 const Profile = () => {
   return (
     <>
-      <div className="container mx-auto  grid grid-cols-4 justify-between mt-10 ">
-        <div className="">
+      <div className="container mx-auto grid grid-cols-4 justify-between mt-10 ">
+        <div className="w-[300px]">
           <div className="  ">
             <h2 className="font-bold text-2xl text-center mt-5">
               Profile Name

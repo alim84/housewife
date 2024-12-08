@@ -3,7 +3,7 @@ import { FaCartShopping } from "react-icons/fa6";
 const UserDashboard = () => {
   return (
     <>
-      <div className="w-[1300px] ml-12 grid grid-cols-4 justify-between mt-10 ">
+      <div className="w-[1500px] ml-2 grid grid-cols-4 justify-between mt-10 ">
         <div className="gap-5">
           <div className="flex gap-5 justify-between items-center w-[350px] m-4 h-[150px] bg-red-50 shadow-xl shadow-gray-100 border-2 border-blue-100 rounded-lg">
             <div className="py-5 px-5">
