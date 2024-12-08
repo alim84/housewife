@@ -183,7 +183,7 @@ const Topmenu = () => {
               placeholder="Mobile or Email"
             />
             <button className="px-32 mt-10 ml-20 py-3 bg-red-300 rounded-md font-semibold text-green-800 ">
-              <Link to="/userdashboard"> CONTINUE</Link>
+              <Link to="/profile"> CONTINUE</Link>
             </button>
           </div>
         </div>

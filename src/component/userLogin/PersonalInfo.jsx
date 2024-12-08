@@ -2,7 +2,7 @@ import { FaUserTie } from "react-icons/fa6";
 const PersonalInfo = () => {
   return (
     <>
-      <div className="container mx-auto ">
+      <div className="w-[1100px] ml-12 ">
         <div className="flex items-center px-5 py-6 mt-10 bg-gray-300">
         <div className="w-[50px] h-[50px] bg-red-300 rounded-full mr-3"><FaUserTie className="text-green-800 text-xl ml-[15px] mt-[10px]" /></div>
           <div>

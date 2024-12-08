@@ -1,5 +1,9 @@
 import { Link } from "react-router-dom";
 // import { FaCartShopping } from "react-icons/fa6";
+import { Outlet } from "react-router-dom";
+
+
+
 
 const Profile = () => {
   return (
@@ -26,7 +30,7 @@ const Profile = () => {
               <div className="w-[20px] h-[20px] bg-red-400 rounded-r-full"></div>
               <div>
                 <Link
-                  to="/userdashboard/personalinfo"
+                  to="/profile/personalinfo"
                   className="block text-md font-semibold pl-4 p-2 hover:font-bold hover:text-red-300"
                 >
                   {" "}
@@ -38,7 +42,7 @@ const Profile = () => {
               <div className="w-[20px] h-[20px] bg-red-400 rounded-r-full"></div>
               <div>
                 <Link
-                  to="/userdashboard/myorder"
+                  to="/profile/myorders"
                   className="block text-md font-semibold pl-4 p-2 hover:font-bold hover:text-red-300"
                 >
                   {" "}
@@ -72,6 +76,10 @@ const Profile = () => {
             </div>
           </div>
         </div>
+      <div>
+      
+        <Outlet/>
+      </div>
       </div>
     </>
   );

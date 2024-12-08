@@ -3,9 +3,10 @@ import {
   createBrowserRouter,
   Route,
   RouterProvider,
+ 
 } from "react-router-dom";
 
-import Registration from "./component/Registration";
+
 import PostItem from "./component/PostItem";
 import Rootlayout from "./layout/Rootlayout";
 import Home from "./pages/Home";
@@ -27,47 +28,37 @@ import UserDashboard from "./component/userLogin/UserDashboard";
 import PersonalInfo from "./component/userLogin/PersonalInfo";
 import MyOrders from "./component/userLogin/MyOrders";
 import Profile from "./component/userLogin/Profile";
-import userlayout from "./layout/userlayout";
+
+
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
-      <Route path="/registration" element={<Registration />}></Route>
-      <Route path="/PostItem" element={<PostItem />}></Route>
-
+      <Route path="/postitem" element={<PostItem />} />
       <Route path="/" element={<Rootlayout />}>
         <Route index element={<Home />} />
-        <Route path="/cake" element={<Cake />}></Route>
-        <Route path="/dailyfood" element={<DailyFood />}></Route>
-        <Route path="/dairy" element={<Dairy />}></Route>
-        <Route path="/fish" element={<Fish />}></Route>
-        <Route path="/foods" element={<Foods />}></Route>
-        <Route path="/frozen" element={<Frozen />}></Route>
-        <Route path="/fruits" element={<Fruits />}></Route>
-        <Route path="/grocery" element={<Grocery />}></Route>
-        <Route path="/household" element={<HouseHold />}></Route>
-        <Route path="/meat" element={<Meat />}></Route>
-        <Route path="/oilitem" element={<OilItem />}></Route>
-        <Route path="/personalcare" element={<PersonalCare />}></Route>
-        <Route path="/stationery" element={<Stationery />}></Route>
-        <Route path="/vegetables" element={<Vegetables />}></Route>
-        <Route path="/userdashboard" element={<UserDashboard />}></Route>
-        <Route
-          path="/userdashboard/personalinfo"
-          element={<PersonalInfo />}
-        ></Route>
-        <Route path="/userdashboard/myorder" element={<MyOrders />}></Route>
-        <Route path="/profile" element={<Profile />}></Route>
-      </Route>
+        <Route path="cake" element={<Cake />} />
+        <Route path="dailyfood" element={<DailyFood />} />
+        <Route path="dairy" element={<Dairy />} />
+        <Route path="fish" element={<Fish />} />
+        <Route path="foods" element={<Foods />} />
+        <Route path="frozen" element={<Frozen />} />
+        <Route path="fruits" element={<Fruits />} />
+        <Route path="grocery" element={<Grocery />} />
+        <Route path="household" element={<HouseHold />} />
+        <Route path="meat" element={<Meat />} />
+        <Route path="oilitem" element={<OilItem />} />
+        <Route path="personalcare" element={<PersonalCare />} />
+        <Route path="stationery" element={<Stationery />} />
+        <Route path="vegetables" element={<Vegetables />} />
 
-      <Route path="/" element={<userlayout />}>
-        <Route index element={<UserDashboard />} />
+        {/* User Profile Routes */}
+        <Route path="profile" element={<Profile />}>
+          <Route index element={<UserDashboard />} />
+          <Route path="personalinfo" element={<PersonalInfo />} />
+          <Route path="myorders" element={<MyOrders />} />
+        </Route>
 
-        <Route
-          path="/userdashboard/personalinfo"
-          element={<PersonalInfo />}
-        ></Route>
-        <Route path="/userdashboard/myorder" element={<MyOrders />}></Route>
-        <Route path="/profile" element={<Profile />}></Route>
+
       </Route>
     </>
   )
