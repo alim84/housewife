@@ -1,16 +1,20 @@
-import { FaUserTie } from "react-icons/fa6";
+import { LiaFirstOrderAlt } from "react-icons/lia";
 
 const MyOrders = () => {
   return (
     <>
       <div className="w-[1100px] ml-12 ">
-        <div className="flex items-center px-5 py-6 mt-10 bg-gray-300">
-          <div className="w-[50px] h-[50px] bg-red-300 rounded-full mr-3">
-            <FaUserTie className="text-green-800 text-xl ml-[15px] mt-[10px]" />
+        <div className="flex items-center px-5 py-6 mt-10 bg-red-400">
+          <div className="w-[50px] h-[50px] bg-yellow-100 rounded-full mr-3">
+            <LiaFirstOrderAlt className="text-red-400 text-3xl ml-[10px] mt-[10px]" />
           </div>
-          <div>
-            <h2 className="font-bold text-xl ">My Orders</h2>
-            <p className="text-[12px]">Manage all your personal information</p>
+          <div className="flex items-center gap-5">
+            <div>
+              <h2 className="font-bold text-xl text-white ">My Orders</h2>
+              <p className="text-[12px] text-white">
+                Manage all your personal information
+              </p>
+            </div>
           </div>
         </div>
         <div className=" w-[1100px] grid grid-cols-10 p-4">

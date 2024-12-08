@@ -6,9 +6,7 @@ import { FaXTwitter } from "react-icons/fa6";
 const Footer = () => {
   return (
     <>
-      <div className="container mx-auto  ">
-        <div className="bg-red-100 py-5 "></div>
-      </div>
+      <div className="container mx-auto  "></div>
       <div className="bg-green-900">
         <div className="container mx-auto py-10 px-20">
           <hr></hr>
@@ -30,7 +28,7 @@ const Footer = () => {
               <p className="text-justify">
                 Khaas food is an innovative agri-tech startup based in
                 Bangladesh with the vision to create a future where safe agro
-                food is the standard, not the exception. 
+                food is the standard, not the exception.
               </p>
               <div>
                 <h3 className="font-bold text-xl text-red-400 pt-4 mb-4">
