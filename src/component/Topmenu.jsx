@@ -17,17 +17,17 @@ const Topmenu = () => {
       <div className="container mx-auto bg-red-400 py-2 px-5 shadow-md shadow-red-400 ">
         <div className="flex justify-center mb-16">
           <div className="flex gap-8 items-center">
-            <div className="border-l-4 border-r-2 border-t-8 border-b-2 px-2 hover:text-white ">
+            <div className="border-l-4 border-r-2   px-2 hover:text-white ">
               <Link>
                 {" "}
-                <FaHome className="text-2xl text-white hover:text-green-800" />
+                <FaHome className="text-2xl text-white" />
               </Link>
             </div>
-            <div className="border-l-4 border-r-2 border-t-8 border-b-2  px-2 hover:text-white ">
+            <div className="border-l-4 border-r-2   px-2 hover:text-white ">
               <Link
                 to=""
                 onClick={() => Setopinion(!opinion)}
-                className="font-bold text-white hover:text-green-800"
+                className="font-bold text-white"
               >
                 Opinion
               </Link>

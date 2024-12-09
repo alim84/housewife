@@ -4,6 +4,7 @@ import { CiSearch } from "react-icons/ci";
 const Stationery = () => {
   let [Viewitem, setViewitem] = useState(false);
   const [counter, setCounter] = useState(0);
+  let [taggle, setTagale] = useState(false);
 
   return (
     <>
@@ -41,174 +42,36 @@ const Stationery = () => {
                     Offer 20%
                   </div>
                 </div>
-                <button className="flex mx-auto py-3 px-7 text-white font-bold bg-red-400 hover:text-red-500 hover:bg-red-300 hover:font-bold  ">
-                  ADD TO CART
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div className="container mx-auto justify-center items-center">
-            <div className="w-[255px] h-[350px] bg-red-100 shadow-md shadow-red-300 hover:border-2  hover:border-green-500 ">
-              <div className="p-5">
-                <img
-                  className="w-[200px] h-[150px] rounded-md mb-5"
-                  src="Cake-1.jpg"
-                  alt=""
-                />
-                <button onClick={() => setViewitem(!Viewitem)}>
-                  {" "}
-                  <CiSearch className="absolute translate-x-[200px] translate-y-[-180px]" />
-                </button>
-                <h2 className="text-lg text-center font-bold text-red-800 mb-4">
-                  Product Name
-                </h2>
-                <div className="flex gap-4 justify-center mb-4">
-                  <div className="w-[80px] h-[30px] bg-red-300 rounded-lg text-center font-bold pt-1">
-                    {" "}
-                    $ 200
+
+                {taggle && (
+                  <div className="flex absolate translate-y-[-0px]  rounded-md bg-red-500 items-center justify-between ">
+                    <button
+                      className="  rounded-lg ml-10 mr-6 text-2xl text-white "
+                      onClick={() => setCounter(counter - 1)}
+                    >
+                      -
+                    </button>
+                    {/* <button onClick={handleReset}>Reset</button> */}
+                    <button className="px-10 py-3 rounded-md  hover:bg-red-400">
+                      {" "}
+                      <p className="text-white font-bold"> {counter}</p>
+                    </button>
+                    <button
+                      className="  rounded-lg mr-10 ml-4 text-2xl  text-white"
+                      onClick={() => setCounter(counter + 1)}
+                    >
+                      +
+                    </button>
                   </div>
-                  <div className="w-[80px] h-[30px] bg-red-300 rounded-lg text-center font-bold pt-1">
-                    {" "}
-                    Offer 20%
-                  </div>
-                </div>
-                <button className="flex mx-auto py-3 px-7 text-white font-bold bg-red-400 hover:text-red-500 hover:bg-red-300 hover:font-bold  ">
-                  ADD TO CART
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div className="container mx-auto justify-center items-center">
-            <div className="w-[255px] h-[350px] bg-red-100 shadow-md shadow-red-300 hover:border-2  hover:border-green-500 ">
-              <div className="p-5">
-                <img
-                  className="w-[200px] h-[150px] rounded-md mb-5"
-                  src="Cake-1.jpg"
-                  alt=""
-                />
-                <button onClick={() => setViewitem(!Viewitem)}>
-                  {" "}
-                  <CiSearch className="absolute translate-x-[200px] translate-y-[-180px]" />
-                </button>
-                <h2 className="text-lg text-center font-bold text-red-800 mb-4">
-                  Product Name
-                </h2>
-                <div className="flex gap-4 justify-center mb-4">
-                  <div className="w-[80px] h-[30px] bg-red-300 rounded-lg text-center font-bold pt-1">
-                    {" "}
-                    $ 200
-                  </div>
-                  <div className="w-[80px] h-[30px] bg-red-300 rounded-lg text-center font-bold pt-1">
-                    {" "}
-                    Offer 20%
-                  </div>
-                </div>
-                <button className="flex mx-auto py-3 px-7 text-white font-bold bg-red-400 hover:text-red-500 hover:bg-red-300 hover:font-bold  ">
-                  ADD TO CART
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div className="container mx-auto justify-center items-center">
-            <div className="w-[255px] h-[350px] bg-red-100 shadow-md shadow-red-300 hover:border-2  hover:border-green-500 ">
-              <div className="p-5">
-                <img
-                  className="w-[200px] h-[150px] rounded-md mb-5"
-                  src="Cake-1.jpg"
-                  alt=""
-                />
-                <button onClick={() => setViewitem(!Viewitem)}>
-                  {" "}
-                  <CiSearch className="absolute translate-x-[200px] translate-y-[-180px]" />
-                </button>
-                <h2 className="text-lg text-center font-bold text-red-800 mb-4">
-                  Product Name
-                </h2>
-                <div className="flex gap-4 justify-center mb-4">
-                  <div className="w-[80px] h-[30px] bg-red-300 rounded-lg text-center font-bold pt-1">
-                    {" "}
-                    $ 200
-                  </div>
-                  <div className="w-[80px] h-[30px] bg-red-300 rounded-lg text-center font-bold pt-1">
-                    {" "}
-                    Offer 20%
-                  </div>
-                </div>
-                <button className="flex mx-auto py-3 px-7 text-white font-bold bg-red-400 hover:text-red-500 hover:bg-red-300 hover:font-bold  ">
-                  ADD TO CART
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div className="container mx-auto justify-center items-center">
-            <div className="w-[255px] h-[350px] bg-red-100 shadow-md shadow-red-300 hover:border-2  hover:border-green-500 ">
-              <div className="p-5">
-                <img
-                  className="w-[200px] h-[150px] rounded-md mb-5"
-                  src="Cake-1.jpg"
-                  alt=""
-                />
-                <button onClick={() => setViewitem(!Viewitem)}>
-                  {" "}
-                  <CiSearch className="absolute translate-x-[200px] translate-y-[-180px]" />
-                </button>
-                <h2 className="text-lg text-center font-bold text-red-800 mb-4">
-                  Product Name
-                </h2>
-                <div className="flex gap-4 justify-center mb-4">
-                  <div className="w-[80px] h-[30px] bg-red-300 rounded-lg text-center font-bold pt-1">
-                    {" "}
-                    $ 200
-                  </div>
-                  <div className="w-[80px] h-[30px] bg-red-300 rounded-lg text-center font-bold pt-1">
-                    {" "}
-                    Offer 20%
-                  </div>
-                </div>
-                <button className="flex mx-auto py-3 px-7 text-white font-bold bg-red-400 hover:text-red-500 hover:bg-red-300 hover:font-bold  ">
-                  ADD TO CART
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div className="container mx-auto justify-center items-center">
-            <div className="w-[255px] h-[350px] bg-red-100 shadow-md shadow-red-300 hover:border-2  hover:border-green-500 ">
-              <div className="p-5">
-                <img
-                  className="w-[200px] h-[150px] rounded-md mb-5"
-                  src="Cake-1.jpg"
-                  alt=""
-                />
-                <button onClick={() => setViewitem(!Viewitem)}>
-                  {" "}
-                  <CiSearch className="absolute translate-x-[200px] translate-y-[-180px]" />
-                </button>
-                <h2 className="text-lg text-center font-bold text-red-800 mb-4">
-                  Product Name
-                </h2>
-                <div className="flex gap-4 justify-center mb-4">
-                  <div className="w-[80px] h-[30px] bg-red-300 rounded-lg text-center font-bold pt-1">
-                    {" "}
-                    $ 200
-                  </div>
-                  <div className="w-[80px] h-[30px] bg-red-300 rounded-lg text-center font-bold pt-1">
-                    {" "}
-                    Offer 20%
-                  </div>
-                </div>
-                <button className="flex mx-auto py-3 px-7 text-white font-bold bg-red-400 hover:text-red-500 hover:bg-red-300 hover:font-bold  ">
-                  ADD TO CART
-                </button>
+                )}
+                {!taggle && (
+                  <button
+                    onClick={() => setTagale(!taggle)}
+                    className="relative flex mx-auto py-3 px-7 text-white font-bold bg-red-400 hover:text-red-500 hover:bg-red-300 hover:font-bold  "
+                  >
+                    ADD TO CART
+                  </button>
+                )}
               </div>
             </div>
           </div>

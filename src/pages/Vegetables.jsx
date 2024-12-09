@@ -3,10 +3,9 @@ import { CiSearch } from "react-icons/ci";
 
 const Vegetables = () => {
   let [Viewitem, setViewitem] = useState(false);
+  let [taggle, setTagale] = useState(false);
 
- 
   const [counter, setCounter] = useState(0);
-
 
   return (
     <>
@@ -44,9 +43,36 @@ const Vegetables = () => {
                     Offer 20%
                   </div>
                 </div>
-                <button className="flex mx-auto py-3 px-7 text-white font-bold bg-red-400 hover:text-red-500 hover:bg-red-300 hover:font-bold  ">
-                  ADD TO CART
-                </button>
+
+                {taggle && (
+                  <div className="flex absolate translate-y-[-0px]  rounded-md bg-red-500 items-center justify-between ">
+                    <button
+                      className="  rounded-lg ml-10 mr-6 text-2xl text-white "
+                      onClick={() => setCounter(counter - 1)}
+                    >
+                      -
+                    </button>
+                    {/* <button onClick={handleReset}>Reset</button> */}
+                    <button className="px-10 py-3 rounded-md  hover:bg-red-400">
+                      {" "}
+                      <p className="text-white font-bold"> {counter}</p>
+                    </button>
+                    <button
+                      className="  rounded-lg mr-10 ml-4 text-2xl  text-white"
+                      onClick={() => setCounter(counter + 1)}
+                    >
+                      +
+                    </button>
+                  </div>
+                )}
+                {!taggle && (
+                  <button
+                    onClick={() => setTagale(!taggle)}
+                    className="relative flex mx-auto py-3 px-7 text-white font-bold bg-red-400 hover:text-red-500 hover:bg-red-300 hover:font-bold  "
+                  >
+                    ADD TO CART
+                  </button>
+                )}
               </div>
             </div>
           </div>
