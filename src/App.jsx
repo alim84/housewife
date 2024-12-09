@@ -3,9 +3,7 @@ import {
   createBrowserRouter,
   Route,
   RouterProvider,
- 
 } from "react-router-dom";
-
 
 import PostItem from "./component/PostItem";
 import Rootlayout from "./layout/Rootlayout";
@@ -29,11 +27,12 @@ import PersonalInfo from "./component/userLogin/PersonalInfo";
 import MyOrders from "./component/userLogin/MyOrders";
 import Profile from "./component/userLogin/Profile";
 import Registration from "./component/Registration";
-
+import OpinionForm from "./component/userLogin/OpinionForm";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
+      <Route path="/opinionform" element={<OpinionForm />} />
       <Route path="/postitem" element={<PostItem />} />
       <Route path="/registration" element={<Registration />} />
       <Route path="/" element={<Rootlayout />}>
@@ -59,8 +58,6 @@ const router = createBrowserRouter(
           <Route path="personalinfo" element={<PersonalInfo />} />
           <Route path="myorders" element={<MyOrders />} />
         </Route>
-
-
       </Route>
     </>
   )

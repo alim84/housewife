@@ -10,6 +10,7 @@ import { Link } from "react-router-dom";
 const Topmenu = () => {
   let [menu, submenu] = useState(false);
   let [login, Setlogin] = useState(false);
+  let [opinion, Setopinion] = useState(false);
 
   return (
     <>
@@ -24,20 +25,21 @@ const Topmenu = () => {
             </div>
             <div className="border-l-2 border-r-2 px-2 hover:text-white ">
               <Link
-                to="/registration"
+                to=""
+                onClick={() => Setopinion(!opinion)}
                 className="font-bold text-white hover:text-green-800"
               >
                 Opinion
               </Link>
             </div>
-            <div className="border-l-2 border-r-2 px-2 hover:text-white ">
+            {/* <div className="border-l-2 border-r-2 px-2 hover:text-white ">
               <Link
                 to="/registration"
                 className="font-bold text-white hover:text-green-800"
               >
                 Comple{" "}
               </Link>
-            </div>
+            </div> */}
           </div>
           <div className="ml-48">
             <ul className="flex gap-8">
@@ -196,6 +198,32 @@ const Topmenu = () => {
               className="px-32 mt-10 ml-20 py-3 bg-red-300 rounded-md font-semibold text-green-800 "
             >
               <Link to="/profile"> CONTINUE</Link>
+            </button>
+          </div>
+        </div>
+      )}
+      {opinion && (
+        <div className="absolute bg-red-100 rounded-lg translate-x-[800px]   w-[500px] h-[500px] z-50 shadow-xl shadow-gray-500">
+          <div className="">
+            <h3 className="text-2xl font-bold text-center text-purple-800 pt-10 mb-5">
+              Opinion
+            </h3>
+            <hr className="bg-purple-900 border-4 border-purple-800 shadow-md shadow-purple-400" />
+          </div>
+          <div className="">
+            <input
+              className="ml-20 mt-10 px-20 text-center py-3 block focus:outline-none border border-gray-100 focus:ring focus:border-blue-500"
+              type="text"
+              placeholder="Mobile or Email"
+            />
+            <button
+              onClick={() => Setopinion(!opinion)}
+              className="px-32 mt-10 ml-20 py-3 bg-red-300 rounded-md hover:bg-red-400 font-semibold text-green-800 "
+            >
+              <Link to="/opinionform" className="font-bold hover:text-white ">
+                {" "}
+                CONTINUE
+              </Link>
             </button>
           </div>
         </div>
