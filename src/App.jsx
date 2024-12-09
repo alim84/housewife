@@ -28,12 +28,14 @@ import UserDashboard from "./component/userLogin/UserDashboard";
 import PersonalInfo from "./component/userLogin/PersonalInfo";
 import MyOrders from "./component/userLogin/MyOrders";
 import Profile from "./component/userLogin/Profile";
+import Registration from "./component/Registration";
 
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
       <Route path="/postitem" element={<PostItem />} />
+      <Route path="/registration" element={<Registration />} />
       <Route path="/" element={<Rootlayout />}>
         <Route index element={<Home />} />
         <Route path="cake" element={<Cake />} />
