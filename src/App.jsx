@@ -28,6 +28,8 @@ import MyOrders from "./component/userLogin/MyOrders";
 import Profile from "./component/userLogin/Profile";
 import Registration from "./component/Registration";
 import OpinionForm from "./component/userLogin/OpinionForm";
+import Offers from "./pages/Offers";
+import HouseWife from "./pages/HouseWife";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -51,6 +53,8 @@ const router = createBrowserRouter(
         <Route path="personalcare" element={<PersonalCare />} />
         <Route path="stationery" element={<Stationery />} />
         <Route path="vegetables" element={<Vegetables />} />
+        <Route path="offers" element={<Offers />} />
+        <Route path="housewife" element={<HouseWife />} />
 
         {/* User Profile Routes */}
         <Route path="profile" element={<Profile />}>

@@ -7,7 +7,7 @@ const UserDashboard = () => {
         <div className="gap-5">
           <div className="flex gap-5 justify-between items-center w-[350px] m-4 h-[150px] bg-red-50 shadow-xl shadow-gray-100 border-2 border-blue-100 rounded-lg">
             <div className="py-5 px-5">
-              <h3 className="text-xl font-bold m-2">Coun</h3>
+              <h3 className="text-xl font-bold m-2">{0}</h3>
               <h4 className="text-xl font-bold m-2 text-gray-400">
                 Total Order
               </h4>
@@ -18,7 +18,7 @@ const UserDashboard = () => {
           </div>
           <div className="flex gap-5 justify-between items-center w-[350px] m-4  h-[150px] bg-red-50 shadow-xl shadow-gray-100 border-2 border-blue-100 rounded-lg">
             <div className="py-5 px-5">
-              <h3 className="text-xl font-bold m-2">Coun</h3>
+              <h3 className="text-xl font-bold m-2">{0}</h3>
               <h4 className="text-xl font-bold m-2 text-gray-400">
                 Cancel Order
               </h4>
@@ -29,7 +29,7 @@ const UserDashboard = () => {
           </div>
           <div className="flex gap-5 justify-between items-center w-[350px] m-4  h-[150px] bg-red-50 shadow-xl shadow-gray-100 border-2 border-blue-100 rounded-lg">
             <div className="py-5 px-5">
-              <h3 className="text-xl font-bold m-2">Coun</h3>
+              <h3 className="text-xl font-bold m-2">{0}</h3>
               <h4 className="text-xl font-bold m-2 text-gray-400">
                 Total Point
               </h4>
@@ -42,7 +42,7 @@ const UserDashboard = () => {
         <div>
           <div className="flex gap-5 justify-between items-center w-[350px] m-4  h-[150px] bg-red-50 shadow-xl shadow-gray-100 border-2 border-blue-100 rounded-lg">
             <div className="py-5 px-5">
-              <h3 className="text-xl font-bold m-2">Coun</h3>
+              <h3 className="text-xl font-bold m-2">{0}</h3>
               <h4 className="text-xl font-bold m-2 text-gray-400">
                 Today Order
               </h4>
@@ -53,7 +53,7 @@ const UserDashboard = () => {
           </div>
           <div className="flex gap-5 justify-between items-center w-[350px] m-4  h-[150px] bg-red-50 shadow-xl shadow-gray-100 border-2 border-blue-100 rounded-lg">
             <div className="py-5 px-5">
-              <h3 className="text-xl font-bold m-2">Coun</h3>
+              <h3 className="text-xl font-bold m-2">{0}</h3>
               <h4 className="text-xl font-bold m-2 text-gray-400">
                 Cancel Amount
               </h4>
@@ -64,7 +64,7 @@ const UserDashboard = () => {
           </div>
           <div className="flex gap-5 justify-between items-center w-[350px] m-4  h-[150px] bg-red-50 shadow-xl shadow-gray-100 border-2 border-blue-100 rounded-lg">
             <div className="py-5 px-5">
-              <h3 className="text-xl font-bold m-2">Coun</h3>
+              <h3 className="text-xl font-bold m-2">{0}</h3>
               <h4 className="text-xl font-bold m-2 text-gray-400">
                 Total Review
               </h4>
@@ -77,7 +77,7 @@ const UserDashboard = () => {
         <div>
           <div className="flex gap-5 justify-between items-center w-[350px] m-4  h-[150px] bg-red-50 shadow-xl shadow-gray-100 border-2 border-blue-100 rounded-lg">
             <div className="py-5 px-5">
-              <h3 className="text-xl font-bold m-2">Coun</h3>
+              <h3 className="text-xl font-bold m-2">{0}</h3>
               <h4 className="text-xl font-bold m-2 text-gray-400">
                 Total Spend
               </h4>
@@ -88,7 +88,7 @@ const UserDashboard = () => {
           </div>
           <div className="flex gap-5 justify-between items-center w-[350px] m-4  h-[150px] bg-red-50 shadow-xl shadow-gray-100 border-2 border-blue-100 rounded-lg">
             <div className="py-5 px-5">
-              <h3 className="text-xl font-bold m-2">Coun</h3>
+              <h3 className="text-xl font-bold m-2">{0}</h3>
               <h4 className="text-xl font-bold m-2 text-gray-400">
                 Wishlisted
               </h4>

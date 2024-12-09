@@ -17,13 +17,13 @@ const Topmenu = () => {
       <div className="container mx-auto bg-red-400 py-2 px-5 shadow-md shadow-red-400 ">
         <div className="flex justify-center mb-16">
           <div className="flex gap-8 items-center">
-            <div className="border-l-2 border-r-2 px-2 hover:text-white ">
+            <div className="border-l-4 border-r-2 border-t-8 border-b-2 px-2 hover:text-white ">
               <Link>
                 {" "}
                 <FaHome className="text-2xl text-white hover:text-green-800" />
               </Link>
             </div>
-            <div className="border-l-2 border-r-2 px-2 hover:text-white ">
+            <div className="border-l-4 border-r-2 border-t-8 border-b-2  px-2 hover:text-white ">
               <Link
                 to=""
                 onClick={() => Setopinion(!opinion)}
@@ -81,7 +81,9 @@ const Topmenu = () => {
           <div className="flex gap-5 items-center ">
             <button className="flex gap-2 items-center hover:bg-red-200 font-semibold py-3 px-10 bg-white rounded-tl-lg rounded-br-lg hover:text-red-400">
               <GrAnnounce className="hover:text-red-400 text-green-600" />{" "}
-              <h4 className="text-red-400 hover:text-green-800"> OFFER</h4>
+              <h4 className="text-red-400 hover:text-green-800">
+                <Link to="/offers">OFFER</Link>
+              </h4>
             </button>
             <input
               className="py-3 px-32 rounded-lg text-gray-800"
@@ -93,7 +95,7 @@ const Topmenu = () => {
               <GiCook className="hover:text-red-400 text-green-600" />
               <h4 className="text-red-400 hover:text-green-800">
                 {" "}
-                House Wife{" "}
+                <Link to="/housewife">House Wife</Link>
               </h4>
             </button>
             <button className="py-2 px-4 bg-red-400">

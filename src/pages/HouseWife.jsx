@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const Foods = () => {
+const HouseWife = () => {
   const settings = {
     dots: true,
     infinite: true,
@@ -282,4 +282,4 @@ const Foods = () => {
   );
 };
 
-export default Foods;
+export default HouseWife;
