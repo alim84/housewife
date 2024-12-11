@@ -20,14 +20,14 @@ const Topmenu = () => {
             <div className="border-l-4 border-r-2   px-2 hover:text-white ">
               <Link>
                 {" "}
-                <FaHome className="text-2xl text-white" />
+                <FaHome className="text-2xl text-white hover:text-3xl" />
               </Link>
             </div>
             <div className="border-l-4 border-r-2   px-2 hover:text-white ">
               <Link
                 to=""
                 onClick={() => Setopinion(!opinion)}
-                className="font-bold text-white"
+                className="font-bold text-white hover:text-lg"
               >
                 Opinion
               </Link>
