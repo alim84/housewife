@@ -4,7 +4,7 @@ const PersonalInfo = () => {
     <>
       <div className="w-[1150px] ml-2 ">
         <div className="flex items-center px-5 py-6 mt-10 bg-red-400">
-          <div className="w-[50px] h-[50px] bg-red-300 rounded-full mr-3">
+          <div className="w-[50px] h-[50px] bg-red-200 rounded-full mr-3">
             <FaUserTie className="text-green-800 text-xl ml-[15px] mt-[10px]" />
           </div>
           <div>
