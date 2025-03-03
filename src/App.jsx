@@ -30,6 +30,7 @@ import Registration from "./component/Registration";
 import OpinionForm from "./component/userLogin/OpinionForm";
 import Offers from "./pages/Offers";
 import HouseWife from "./pages/HouseWife";
+import Cart from "./pages/Cart";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -55,6 +56,7 @@ const router = createBrowserRouter(
         <Route path="vegetables" element={<Vegetables />} />
         <Route path="offers" element={<Offers />} />
         <Route path="housewife" element={<HouseWife />} />
+        <Route path="cart" element={<Cart />} />
 
         {/* User Profile Routes */}
         <Route path="profile" element={<Profile />}>
