@@ -114,35 +114,19 @@ const Topmenu = () => {
           <div className="absolute translate-y-[-50px]  px-6 py-[15px] rounded-r-full  bg-red-500 "></div>
           <div className="absolute translate-y-[-50px]  px-3 py-[15px] rounded-r-full  bg-red-300 "></div>
 
-          <div className="flex justify-between items-center border-b-2 hover:bg-red-400 ">
-            <button className="px-20 py-6 relative text-md font-semibold hover:text-white">
-              <Link to="/fish">Fish</Link>
-            </button>
-          </div>
+     
           <div className="absolute translate-y-[-50px]  px-6 py-[15px] rounded-r-full  bg-red-500 "></div>
           <div className="absolute translate-y-[-50px]  px-3 py-[15px] rounded-r-full  bg-red-300 "></div>
 
-          <div className="flex justify-between items-center border-b-2 hover:bg-red-400 ">
-            <button className="px-20 py-6 relative text-md font-semibold hover:text-white">
-              <Link to="/meat">Meat</Link>
-            </button>
-          </div>
+ 
           <div className="absolute translate-y-[-50px]  px-6 py-[15px] rounded-r-full  bg-red-500 "></div>
           <div className="absolute translate-y-[-50px]  px-3 py-[15px] rounded-r-full  bg-red-300 "></div>
 
-          <div className="flex justify-between items-center border-b-2 hover:bg-red-400 ">
-            <button className="px-20 py-6 relative text-md font-semibold hover:text-white">
-              <Link to="/personalcare">Personal Care</Link>
-            </button>
-          </div>
+   
           <div className="absolute translate-y-[-50px]  px-6 py-[15px] rounded-r-full  bg-red-500 "></div>
           <div className="absolute translate-y-[-50px]  px-3 py-[15px] rounded-r-full  bg-red-300 "></div>
 
-          <div className="flex justify-between items-center border-b-2 hover:bg-red-400 ">
-            <button className="px-20 py-6 relative text-md font-semibold hover:text-white">
-              <Link to="/stationery">Stationary</Link>
-            </button>
-          </div>
+   
           <div className="absolute translate-y-[-50px]  px-6 py-[15px] rounded-r-full  bg-red-500 "></div>
           <div className="absolute translate-y-[-50px]  px-3 py-[15px] rounded-r-full  bg-red-300 "></div>
 
